@@ -4,6 +4,7 @@ module NABOO {
 	requires telegrambots.meta;
 	requires com.google.gson;
 	requires javafx.fxml;
+	requires rome;
 
 	opens application to javafx.graphics, javafx.fxml;
 }

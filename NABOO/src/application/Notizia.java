@@ -3,6 +3,7 @@ package application;
 import java.time.LocalDateTime;
 
 public class Notizia {
+	
 	String titolo;
 	LocalDateTime timestamp;
 	String descrizione;
@@ -46,6 +47,11 @@ public class Notizia {
 	}
 	public String getImmagine() {
 		return immagine;
+	}
+	@Override
+	public String toString() {
+		return "Notizia [titolo=" + titolo + ", timestamp=" + timestamp + ", descrizione=" + descrizione + ", autore="
+				+ autore + ", fonte=" + fonte + ", link=" + link + ", immagine=" + immagine + "]";
 	}
 
 }
