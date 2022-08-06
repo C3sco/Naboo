@@ -1,29 +1,29 @@
 package application;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Notizia {
 	
 	String titolo;
-	LocalDateTime timestamp;
+	Date timestamp;
 	String descrizione;
 	String autore;
 	String fonte;
 	String link;
-	String immagine;
 	
 	public Notizia() {
 		
 	}
 	
-	public Notizia(String titolo,LocalDateTime timestamp,String descrizione,String autore,String fonte,String link,String immagine) {
+	public Notizia(String titolo,Date timestamp,String descrizione,String autore,String fonte,String link) {
 		this.titolo=titolo;
 		this.timestamp=timestamp;
 		this.descrizione=descrizione;
 		this.autore=autore;
 		this.fonte=fonte;
 		this.link=link;
-		this.immagine=immagine;
+
 		
 	}
 	public String getTitolo() {

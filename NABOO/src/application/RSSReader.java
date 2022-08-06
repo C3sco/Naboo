@@ -3,6 +3,7 @@ package application;
 import java.net.URL;
 import java.util.ArrayList;
 
+import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
@@ -18,6 +19,14 @@ public class RSSReader {
 			reader = new XmlReader(url);
 			SyndFeedInput inp = new SyndFeedInput();
 			SyndFeed feed = inp.build(reader);
+			
+			for(Object obj : feed.getEntries()) {
+				SyndEntry entry = (SyndEntry) obj;
+				String descrizione =  entry.getDescription();
+				Notizia notiziaFeed = new Notizia(entry.getTitle(),entry.getUpdatedDate(),entry.getDescription(),entry.getAuthor()
+						,entry.getSource(),entry.getLink());
+				
+			}
 			
 		} finally {
 			if(reader!=null) {
