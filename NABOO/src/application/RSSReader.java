@@ -1,19 +1,24 @@
 package application;
 
+import java.io.FileWriter;
 import java.net.URL;
 import java.util.ArrayList;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
 
 public class RSSReader {
-	public RSSReader() throws Exception{
+	
+	public void RSSRead() throws Exception{
 	
 		URL url = new URL("https://www.ansa.it/sito/ansait_rss.xml");
 		XmlReader reader = null;
 		ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
 		try {
 			reader = new XmlReader(url);
@@ -22,11 +27,16 @@ public class RSSReader {
 			
 			for(Object obj : feed.getEntries()) {
 				SyndEntry entry = (SyndEntry) obj;
-				String descrizione =  entry.getDescription();
-				Notizia notiziaFeed = new Notizia(entry.getTitle(),entry.getUpdatedDate(),entry.getDescription(),entry.getAuthor()
+				Notizia notizia = new Notizia(entry.getTitle(),entry.getUpdatedDate(),entry.getDescription(),entry.getAuthor()
 						,entry.getSource(),entry.getLink());
-				
+				listaNotizie.add(notizia);
 			}
+			
+			FileWriter write = new FileWriter("notizie.json");
+			gson.toJson(listaNotizie,write);
+			write.flush();
+			write.close();
+			
 			
 		} finally {
 			if(reader!=null) {

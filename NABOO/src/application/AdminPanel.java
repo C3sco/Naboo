@@ -20,10 +20,10 @@ public class AdminPanel {
 		try {
 			JsonReader read = new JsonReader(new FileReader(db));
 			usersJson = gson.fromJson(read, Utente[].class);
-			
+			/*
 			for(int i=0; i<usersJson.length;i++) {
 				Utente user = new Utente(usersJson[i].getNome(), );
-			}
+			}*/
 			
 		}catch(FileNotFoundException e) {
 			e.getMessage();

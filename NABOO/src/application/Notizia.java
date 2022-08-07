@@ -3,20 +3,23 @@ package application;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+import com.sun.syndication.feed.synd.SyndContent;
+import com.sun.syndication.feed.synd.SyndFeed;
+
 public class Notizia {
 	
 	String titolo;
 	Date timestamp;
-	String descrizione;
+	SyndContent descrizione;
 	String autore;
-	String fonte;
+	SyndFeed fonte;
 	String link;
 	
 	public Notizia() {
 		
 	}
 	
-	public Notizia(String titolo,Date timestamp,String descrizione,String autore,String fonte,String link) {
+	public Notizia(String titolo,Date timestamp,SyndContent descrizione,String autore,SyndFeed fonte,String link) {
 		this.titolo=titolo;
 		this.timestamp=timestamp;
 		this.descrizione=descrizione;
@@ -45,13 +48,10 @@ public class Notizia {
 	public String getLink() {
 		return link;
 	}
-	public String getImmagine() {
-		return immagine;
-	}
 	@Override
 	public String toString() {
 		return "Notizia [titolo=" + titolo + ", timestamp=" + timestamp + ", descrizione=" + descrizione + ", autore="
-				+ autore + ", fonte=" + fonte + ", link=" + link + ", immagine=" + immagine + "]";
+				+ autore + ", fonte=" + fonte + ", link=" + link + "]";
 	}
 
 }
