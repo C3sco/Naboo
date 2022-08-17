@@ -1,11 +1,14 @@
 package application;
 	
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 
 import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
@@ -19,12 +22,15 @@ import com.sun.syndication.io.XmlReader;
 
 
 public class Main extends Application {
+	private static Stage pagina;
 	
 	@Override
 	public void start(Stage primaryStage) {
+		primaryStage.setResizable(false);
 
 		try {
-			BorderPane root = new BorderPane();
+			//BorderPane root = new BorderPane();
+			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
 			Scene scene = new Scene(root,800,800);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
@@ -68,6 +74,11 @@ public class Main extends Application {
 				reader.close();
 			}
 		}
+	}
+	
+	public void cambiaPagina(String fxml) throws IOException{
+		Parent p = FXMLLoader.load(getClass().getResource(fxml));
+		pagina.getScene().setRoot(p);
 	}
 	
 	public static void main(String[] args) {

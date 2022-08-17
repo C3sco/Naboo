@@ -19,6 +19,7 @@ public class Login {
 		String user = usernameText.getText();
 		String psw = passwordText.getText();
 		Admin admin;
+		Main pagina = new Main();
 		
 		try {
 			JsonReader read = new JsonReader(new FileReader(inputF));
@@ -29,6 +30,7 @@ public class Login {
 				 * inserire pagina pannello admin
 				 * 
 				 */
+				pagina.cambia
 			}
 			
 		}catch(FileNotFoundException e) {

@@ -25,7 +25,7 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "il Mio bot";
+        return "Naboo Bot";
     }
 
     @Override
