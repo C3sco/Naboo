@@ -26,11 +26,7 @@ public class Login {
 			admin = gson.fromJson(read, Admin.class);
 			if(admin.getUsername().equalsIgnoreCase(user) && 
 					admin.getPassword().equalsIgnoreCase(psw)) {
-				/*
-				 * inserire pagina pannello admin
-				 * 
-				 */
-				pagina.cambia
+				pagina.cambiaPagina("AdminPanel.fxml");
 			}
 			
 		}catch(FileNotFoundException e) {
