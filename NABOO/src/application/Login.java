@@ -9,15 +9,16 @@ import com.google.gson.stream.JsonReader;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 public class Login {
-	@FXML private TextField usernameText;
-	@FXML private TextField passwordText;
 	
-	public void login() throws IOException{
+	@FXML private TextField userAdmin;
+	@FXML private TextField pswAdmin;
+	
+	public void loginAdmin() throws IOException{
 		String inputF = "admin.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
-		String user = usernameText.getText();
-		String psw = passwordText.getText();
+		String user = userAdmin.getText();
+		String psw = pswAdmin.getText();
 		Admin admin;
 		Main pagina = new Main();
 		

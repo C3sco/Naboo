@@ -32,7 +32,7 @@ public class Notizia {
 	public String getTitolo() {
 		return titolo;
 	}
-	
+	/*
 	public LocalDateTime getTimestamp() {
 		return timestamp;
 	}
@@ -44,7 +44,7 @@ public class Notizia {
 	}
 	public String getFonte() {
 		return fonte;
-	}
+	}*/
 	public String getLink() {
 		return link;
 	}

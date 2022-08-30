@@ -1,4 +1,5 @@
 module NABOO {
+	requires javafx.graphics;
 	requires javafx.controls;
 	requires telegrambots;
 	requires telegrambots.meta;

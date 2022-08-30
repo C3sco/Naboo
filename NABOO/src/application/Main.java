@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonIOException;
 import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.SyndFeedInput;
@@ -31,6 +32,7 @@ public class Main extends Application {
 		try {
 			//BorderPane root = new BorderPane();
 			Parent root = FXMLLoader.load(getClass().getResource("LoginXML.fxml"));
+
 			Scene scene = new Scene(root,800,800);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
@@ -83,6 +85,18 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+		
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		String file = "admin.json";
+		Admin admin = new Admin("Admin","Admin");
+		
+		try {
+			FileWriter fw = new FileWriter(file);
+			gson.toJson(admin,fw);
+			fw.close();
+		}catch(JsonIOException | IOException e) {
+			((Throwable) e).getMessage();
+		}
 
 	}
 }
