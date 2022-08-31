@@ -88,11 +88,12 @@ public class Main extends Application {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String file = "admin.json";
-		Admin admin = new Admin("Admin","Admin");
+		Admin admin = new Admin("admin","admin");
 		
 		try {
 			FileWriter fw = new FileWriter(file);
 			gson.toJson(admin,fw);
+			fw.flush();
 			fw.close();
 		}catch(JsonIOException | IOException e) {
 			((Throwable) e).getMessage();

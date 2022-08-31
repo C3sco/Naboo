@@ -14,12 +14,12 @@
             <Font name="System Italic" size="12.0" />
          </font></Label>
      
-      <TextField id="userAdmin" fx:id="userAdmin" alignment="CENTER" layoutX="314.0" layoutY="241.0" promptText="Username" />
+      <TextField id="userAdmin" fx:id="userAdmin" alignment="CENTER" layoutX="314.0" layoutY="241.0" onAction="#loginAdmin" promptText="Username" />
       <Button id="loginAdmin" fx:id="loginAdminButton" layoutX="361.0" layoutY="349.0" mnemonicParsing="false" onAction="#loginAdmin" text="LOG IN">
          <effect>
             <Blend />
          </effect></Button>
-      <TextField id="psswAdmin" fx:id="pswAdmin" alignment="CENTER" layoutX="314.0" layoutY="288.0" promptText="Password" />
+      <TextField id="psswAdmin" fx:id="pswAdmin" alignment="CENTER" layoutX="314.0" layoutY="288.0" onAction="#loginAdmin" promptText="Password" />
       <Label id="labelAdmin" layoutX="275.0" layoutY="91.0" prefHeight="37.0" prefWidth="226.0" text="BENVENUTO SU NABOO!" textAlignment="CENTER" textFill="#e80a0a">
          <font>
             <Font name="Bodoni MT" size="18.0" />

@@ -1,8 +1,8 @@
 package application;
 
 public class Admin {
-	private String username;
-	private String password;
+	public String username;
+	public String password;
 	
 	public Admin(String username, String password) {
 		this.username = username;

@@ -8,16 +8,13 @@ import com.sun.syndication.feed.synd.SyndFeed;
 
 public class Notizia {
 	
-	String titolo;
-	Date timestamp;
-	SyndContent descrizione;
-	String autore;
-	SyndFeed fonte;
-	String link;
+	public String titolo;
+	public Date timestamp;
+	public SyndContent descrizione;
+	public String autore;
+	public SyndFeed fonte;
+	public String link;
 	
-	public Notizia() {
-		
-	}
 	
 	public Notizia(String titolo,Date timestamp,SyndContent descrizione,String autore,SyndFeed fonte,String link) {
 		this.titolo=titolo;

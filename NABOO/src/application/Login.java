@@ -20,13 +20,14 @@ public class Login {
 		String user = userAdmin.getText();
 		String psw = pswAdmin.getText();
 		Admin admin;
-		Main pagina = new Main();
 		
+		Main pagina = new Main();
+
 		try {
 			JsonReader read = new JsonReader(new FileReader(inputF));
 			admin = gson.fromJson(read, Admin.class);
-			if(admin.getUsername().equalsIgnoreCase(user) && 
-					admin.getPassword().equalsIgnoreCase(psw)) {
+			if(admin.getUsername().equals(user) && 
+					admin.getPassword().equals(psw)) {
 				pagina.cambiaPagina("AdminPanel.fxml");
 			}
 			
