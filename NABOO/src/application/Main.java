@@ -27,6 +27,7 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) {
+		pagina = primaryStage;
 		primaryStage.setResizable(false);
 
 		try {
@@ -85,7 +86,7 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
-		
+		/*
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String file = "admin.json";
 		Admin admin = new Admin("admin","admin");
@@ -97,7 +98,7 @@ public class Main extends Application {
 			fw.close();
 		}catch(JsonIOException | IOException e) {
 			((Throwable) e).getMessage();
-		}
+		}*/
 
 	}
 }
