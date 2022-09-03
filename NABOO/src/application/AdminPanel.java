@@ -13,7 +13,7 @@ import javafx.scene.control.Button;
 
 public class AdminPanel {
 	
-	@FXML public Button logout;
+	@FXML private Button logout;
 	
 	public void aggiungiUtente() {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -35,9 +35,12 @@ public class AdminPanel {
 	}
 	
 	public void logoutAdmin() throws IOException{
-		Main pagina = new Main();
-		pagina.cambiaPagina("LoginXML.fxml");
 		
+	}
+	
+	public void gestisciUtenti() throws IOException{
+		Main pagina = new Main();
+		pagina.cambiaPagina("Utenti.fxml");
 	}
 
 }
