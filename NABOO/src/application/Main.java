@@ -89,6 +89,7 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		
 		TelegramBotsApi botsApi;
         try {
             botsApi = new TelegramBotsApi(DefaultBotSession.class);
