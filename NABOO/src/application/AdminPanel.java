@@ -33,9 +33,14 @@ public class AdminPanel {
 			e.getMessage();
 		}
 	}
+	public void gestisciCommenti() throws IOException{
+		Main pagina = new Main();
+		pagina.cambiaPagina("Commenti.fxml");
+	}
 	
 	public void logoutAdmin() throws IOException{
-		
+		Main pagina = new Main();
+		pagina.cambiaPagina("LoginXML.fxml");
 	}
 	
 	public void gestisciUtenti() throws IOException{

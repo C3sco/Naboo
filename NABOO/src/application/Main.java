@@ -12,6 +12,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonIOException;
@@ -85,20 +89,22 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		TelegramBotsApi botsApi;
+        try {
+            botsApi = new TelegramBotsApi(DefaultBotSession.class);
+            botsApi.registerBot(new MyBot());
+        } catch (TelegramApiException e) {
+           
+            e.printStackTrace();
+        }
+
 		launch(args);
 		/*
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String file = "admin.json";
 		Admin admin = new Admin("admin","admin");
 		
-		try {
-			FileWriter fw = new FileWriter(file);
-			gson.toJson(admin,fw);
-			fw.flush();
-			fw.close();
-		}catch(JsonIOException | IOException e) {
-			((Throwable) e).getMessage();
-		}*/
+		*/
 
 	}
 }

@@ -6,31 +6,16 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class MyBot extends TelegramLongPollingBot {
-/*    @Override
-    public void onUpdateReceived(Update update) {
-        if (update.hasMessage() && update.getMessage().hasText()) {
-            SendMessage message = new SendMessage(); // Create a SendMessage object with mandatory fields
-            message.setChatId(update.getMessage().getChatId().toString());
-            message.setText(update.getMessage().getText());
-            
-            try {
-                execute(message); // Call method to send the message
-            } catch (TelegramApiException e) {
-                e.printStackTrace();
-            }
-        }
-        
-    }*/
 	
 
     @Override
     public String getBotUsername() {
-        return "Naboo Bot";
+        return "Naboo2022_Bot";
     }
 
     @Override
     public String getBotToken() {
-        return "1727092725:AAH4pEDopSWnf35Yfv2g9CH0dqjiWSs6l4I";
+        return "5535947581:AAGnbDVP6w83v_8lUHg2LIrOYgyuf6L8ReY";
     }
     
     @Override
@@ -43,7 +28,15 @@ public class MyBot extends TelegramLongPollingBot {
             String risposta = null;
             String[] split = message.split(" ");
             String command = split[0].substring(1);
-            
+            if(message.equalsIgnoreCase("ciao")) {
+            	sendMessage.setText("ciao");
+            	sendMessage.setChatId(update.getMessage().getChatId());
+            	try {
+            		execute(sendMessage);
+            	}catch(TelegramApiException e) {
+            		
+            	}
+            }  /*          
             switch(command) {
             
             case "/registrazione" :
@@ -53,20 +46,16 @@ public class MyBot extends TelegramLongPollingBot {
             		execute(sendMessage);
             	}catch(TelegramApiException e){
             		
-            	}
-            	
-            	
+            	}     	
             }
-            
-            
-            
+
             sendMessage.setChatId(chatId);
             
             try {
                 execute(sendMessage); // Call method to send the message
             } catch (TelegramApiException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
         
     }

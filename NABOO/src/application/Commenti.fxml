@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- TODO Add Nodes -->
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CommentiPanel">
+	<children>
+    <TableView fx:id="tableCommenti" layoutX="35.0" layoutY="28.0" prefHeight="312.0" prefWidth="358.0">
+    <columns>
+        <TableColumn fx:id="Notizia" prefWidth="75.0" text="Notizia" />
+        <TableColumn fx:id="Username" prefWidth="75.0" text="Username" />
+        <TableColumn fx:id="Commento" prefWidth="207.0" text="Commento" />
+    </columns>
+    </TableView>
+      <Button layoutX="417.0" layoutY="135.0" mnemonicParsing="false" onAction="#deleteCommento" text="Rimuovi Commento" />
+      <Button layoutX="432.0" layoutY="240.0" mnemonicParsing="false" onAction="#updateTable" text="Aggiorna Lista" />
+      
+</children>
+</AnchorPane>
