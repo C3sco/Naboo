@@ -9,17 +9,18 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestioneUtenti">
 	<children>
-    <TableView fx:id="tableView" layoutX="35.0" layoutY="28.0" prefHeight="200.0" prefWidth="227.0">
+    <TableView fx:id="tableView" layoutX="35.0" layoutY="28.0" prefHeight="200.0" prefWidth="302.0">
     <columns>
         <TableColumn fx:id="Nome" prefWidth="75.0" text="Nome" />
         <TableColumn fx:id="Cognome" prefWidth="75.0" text="Cognome" />
         <TableColumn fx:id="Username" prefWidth="75.0" text="Username" />
+        <TableColumn fx:id="Password" prefWidth="75.0" text="Password" />
     </columns>
     </TableView>
       <Button layoutX="265.0" layoutY="448.0" mnemonicParsing="false" onAction="#goBack" text="Indietro" />
-      <Button layoutX="294.0" layoutY="148.0" mnemonicParsing="false" onAction="#updateUsers" text="Aggiorna Lista" />
-      <Button layoutX="294.0" layoutY="53.0" mnemonicParsing="false" onAction="#deleteUser" text="Elimina utente" />
-      <Button layoutX="294.0" layoutY="103.0" mnemonicParsing="false" onAction="#modifyUser" text="Modifica utente" />
+      <Button layoutX="428.0" layoutY="152.0" mnemonicParsing="false" onAction="#updateUsers" text="Aggiorna Lista" />
+      <Button layoutX="424.0" layoutY="47.0" mnemonicParsing="false" onAction="#deleteUser" text="Elimina utente" />
+      <Button layoutX="424.0" layoutY="103.0" mnemonicParsing="false" onAction="#modifyUser" text="Modifica utente" />
       <TextField fx:id="ModificaNome" layoutX="160.0" layoutY="301.0" text="" />
       <TextField fx:id="ModificaCognome" layoutX="160.0" layoutY="343.0" text="" />
       <TextField fx:id="ModificaUsername" layoutX="160.0" layoutY="393.0" text="" />

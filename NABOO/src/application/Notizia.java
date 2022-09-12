@@ -9,28 +9,30 @@ import com.sun.syndication.feed.synd.SyndFeed;
 public class Notizia {
 	
 	public String titolo;
-	public Date timestamp;
-	public SyndContent descrizione;
+	public String timestamp;
+	public String descrizione;
 	public String autore;
-	public SyndFeed fonte;
+	public String fonte;
 	public String link;
+	public String categoria;
 	
 	
-	public Notizia(String titolo,Date timestamp,SyndContent descrizione,String autore,SyndFeed fonte,String link) {
+	public Notizia(String titolo,String timestamp,String descrizione,String autore, String fonte,String link,String categoria) {
 		this.titolo=titolo;
 		this.timestamp=timestamp;
 		this.descrizione=descrizione;
 		this.autore=autore;
 		this.fonte=fonte;
 		this.link=link;
+		this.categoria=categoria;
 
 		
 	}
 	public String getTitolo() {
 		return titolo;
 	}
-	/*
-	public LocalDateTime getTimestamp() {
+	
+	public String getTimestamp() {
 		return timestamp;
 	}
 	public String getDescrizione() {
@@ -41,9 +43,12 @@ public class Notizia {
 	}
 	public String getFonte() {
 		return fonte;
-	}*/
+	}
 	public String getLink() {
 		return link;
+	}
+	public String getCategoria() {
+		return categoria;
 	}
 	@Override
 	public String toString() {

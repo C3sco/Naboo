@@ -2,16 +2,29 @@
   {
     "nome": "Francesco",
     "cognome": "Montanari",
-    "username": "Cesco"
+    "username": "Cesco",
+    "password": "123"
   },
   {
     "nome": "Mario",
     "cognome": "Rossi",
-    "username": "MarioRo"
+    "username": "MarioRo",
+    "password": "Mario1"
   },
   {
     "nome": "123",
     "cognome": "123",
-    "username": "123"
+    "username": "123",
+    "password": "123"
+  },
+  {
+    "nome": "giovanni",
+    "cognome": "blu"
+  },
+  {
+    "nome": "Cesco",
+    "cognome": "test",
+    "username": "xC3sco",
+    "password": "enzomma"
   }
 ]

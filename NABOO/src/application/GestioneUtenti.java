@@ -30,11 +30,12 @@ public class GestioneUtenti{
 	    @FXML private TableColumn<Utente, String> Nome;
 	    @FXML private TableColumn<Utente, String> Cognome;
 	    @FXML private TableColumn<Utente, String> Username;
+	    @FXML private TableColumn<Utente,String> Password;
 	    @FXML private TextField ModificaNome;
 	    @FXML private TextField ModificaCognome;
 	    @FXML private TextField ModificaUsername;
 	    
-	    public static Utente utenteModifica = new Utente("","","");
+	    public static Utente utenteModifica = new Utente("","","","");
 	    
 	    public ObservableList<Utente> listaUsers = FXCollections.observableArrayList();
 	   // ArrayList<Utente> jsonUsers = new ArrayList<Utente>();
@@ -49,6 +50,7 @@ public class GestioneUtenti{
 	    	Nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
 	    	Cognome.setCellValueFactory(new PropertyValueFactory<>("cognome"));
 	    	Username.setCellValueFactory(new PropertyValueFactory<>("username"));
+	    	Password.setCellValueFactory(new PropertyValueFactory<>("password"));
 	    	tableView.setItems(listaUsers);
 	    	
 	    }
@@ -60,7 +62,7 @@ public class GestioneUtenti{
 	 	    	
 	 	    	utentiJson = gson.fromJson(jr,Utente[].class);
 	 	    	for(int i=0; i<utentiJson.length;i++) {
-	 	    		Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername());
+	 	    		Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername(),utentiJson[i].getPassword());
 	 	    		listaUsers.add(user);
 	 	    	}
 	 	    	
@@ -95,7 +97,8 @@ public class GestioneUtenti{
 	    	String nome = ModificaNome.getText();
 	    	String cognome = ModificaCognome.getText();
 	    	String username = ModificaUsername.getText();
-	    	Utente user = new Utente(nome,cognome,username);
+	    	String password = tableView.getSelectionModel().getSelectedItem().getPassword();
+	    	Utente user = new Utente(nome,cognome,username,password);
 	    	Utente userSelected = tableView.getSelectionModel().getSelectedItem();
 	    	
 	    	JsonReader jr = new JsonReader(new FileReader("users.json"));
@@ -103,7 +106,7 @@ public class GestioneUtenti{
 	    	ArrayList<Utente> lista = new ArrayList<>();
 	    	for(int i=0; i<utentiJson.length;i++) {
 	    		if(!utentiJson[i].getUsername().equals(userSelected.getUsername())) {
-	    		Utente tmpUser = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername());
+	    		Utente tmpUser = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername(),utentiJson[i].getPassword());
 	    			lista.add(tmpUser);
 	    		}
 	    	}
@@ -135,7 +138,7 @@ public class GestioneUtenti{
 	    	JsonReader jr = new JsonReader(new FileReader("users.json"));
 	    	utentiJson = gson.fromJson(jr,Utente[].class);
 	    	for(int i=0; i<utentiJson.length;i++) {
-	    		if(!utentiJson[i].getUsername().equals(tableView.getSelectionModel().getSelectedItem().getUsername())) {
+	    		if(!utentiJson[i].getUsername().equalsIgnoreCase(tableView.getSelectionModel().getSelectedItem().getUsername())) {
 	    			lista.add(utentiJson[i]);
 	    		}
 	    	}
@@ -160,7 +163,8 @@ public class GestioneUtenti{
 	    	String nome = ModificaNome.getText();
 	    	String cognome = ModificaCognome.getText();
 	    	String username = ModificaUsername.getText();
-	    	Utente user = new Utente(nome,cognome,username);
+	    	String password = ModificaUsername.getText();
+	    	Utente user = new Utente(nome,cognome,username,password);
 	    	
 	    	lista.add(user);
 	    	

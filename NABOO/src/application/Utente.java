@@ -3,12 +3,14 @@ package application;
 public class Utente {
 	private String nome;
 	private String cognome;
-	private String username;
+	public String username;
+	private String password;
 	
-	public Utente(String nome, String cognome, String username) {
+	public Utente(String nome, String cognome, String username, String password) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.username = username;
+		this.password = password;
 	}
 	
 	public String getNome() {
@@ -32,6 +34,14 @@ public class Utente {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 

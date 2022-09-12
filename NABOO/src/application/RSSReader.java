@@ -10,7 +10,7 @@ import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import com.sun.syndication.io.SyndFeedInput;
 import com.sun.syndication.io.XmlReader;
-
+/*
 public class RSSReader {
 	
 	public void RSSRead() throws Exception{
@@ -57,6 +57,6 @@ public class RSSReader {
 	
 	public SyndFeed 
 		
-	}*/
+	}
 
-}
+}*/

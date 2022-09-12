@@ -47,5 +47,14 @@ public class AdminPanel {
 		Main pagina = new Main();
 		pagina.cambiaPagina("Utenti.fxml");
 	}
+	
+	public void gestisciNotizie() throws IOException{
+		Main pagina = new Main();
+		pagina.cambiaPagina("Notizie.fxml");
+	}
+	public void newsCollector() throws Exception {
+		Main m = new Main();
+		m.RSSReadAnsa();
+	}
 
 }

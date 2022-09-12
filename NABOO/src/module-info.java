@@ -8,6 +8,7 @@ module NABOO {
 	requires telegrambots;
 	requires telegrambots.meta;
 	requires com.fasterxml.jackson.databind;
+	requires org.slf4j;
 
 	
 
