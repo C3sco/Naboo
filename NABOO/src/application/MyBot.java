@@ -25,10 +25,14 @@ public class MyBot extends TelegramLongPollingBot {
 
 	Commento[] commentiJson;
 	Notizia[] notizieJson;
+	Voto[] votiJson;
 	ArrayList<Utente> listaUsers = new ArrayList<Utente>();
+	ArrayList<Voto> listaVoti = new ArrayList<Voto>();
 	int register = 0;
 	int login = 0;
 	int notizia = 0;
+	int voto = 0;
+	Notizia currentNotizia;
 
 	@Override
 	public String getBotUsername() {
@@ -55,9 +59,9 @@ public class MyBot extends TelegramLongPollingBot {
 			String[] split = message.split(" ");
 			String nome = update.getMessage().getChat().getFirstName();
 			String cognome = update.getMessage().getChat().getLastName();
-			
-			
-			
+
+
+
 			switch(register) {
 			case 1:
 				String password = message;
@@ -66,21 +70,21 @@ public class MyBot extends TelegramLongPollingBot {
 
 				try {
 					JsonReader jr = new JsonReader(new FileReader("users.json"));
-					 utentiJson = gson.fromJson(jr,Utente[].class);
+					utentiJson = gson.fromJson(jr,Utente[].class);
 					for(int i=0; i<utentiJson.length;i++) {
-		 	    		Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername(),utentiJson[i].getPassword());
-		 	    		listaUsers.add(user);
+						Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername(),utentiJson[i].getPassword());
+						listaUsers.add(user);
 					}
 
 				}catch(FileNotFoundException e) {
-		 	    	e.getMessage();
-		 	    }
-				
-				
+					e.getMessage();
+				}
+
+
 				listaUsers.add(utente);
 				Utente[] userFinal = listaUsers.toArray(new Utente[0]);
 
-		    	FileWriter fw;
+				FileWriter fw;
 				try {
 					fw = new FileWriter("users.json");
 					gson.toJson(userFinal,fw);
@@ -92,8 +96,40 @@ public class MyBot extends TelegramLongPollingBot {
 				}
 				break;
 			}
+
+			switch(voto) {
+			case 1: 
+				listaVoti.clear();
+				int vote = Integer.parseInt(message);
+				int duplicate = 0;
+				if(vote<=10 && vote>=1) {
+					Voto votoInsert = new Voto(vote,currentNotizia.getLink(),username);
+					try {
+						JsonReader jr = new JsonReader(new FileReader("voti.json"));
+						votiJson = gson.fromJson(jr,Voto[].class);
+						for(int i=0;i<votiJson.length;i++) {
+							listaVoti.add(votiJson[i]);
+							if(votiJson[i].getUsernameUtente().equals(username) & votiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { //controllo che non ci sia già un voto dell'utente nella notizia
+								duplicate = 1;
+							}
+						}
+						if(duplicate==0) {
+							listaVoti.add(votoInsert);
+						}
+						Voto[] votiFinal = listaVoti.toArray(new Voto[0]);
+						FileWriter fw = new FileWriter("voti.json");
+						gson.toJson(votiFinal,fw);
+						fw.flush();
+						fw.close();
+					}catch(IOException e) {
+						e.getMessage();
+					}
+
+				}
+			}
 			/*
-			if(notizia==1) {
+			switch(notizia) {
+			case 1:
 				switch(message) {
 				case "random":
 					Random random = new Random();
@@ -104,18 +140,22 @@ public class MyBot extends TelegramLongPollingBot {
 			 	    	JsonReader jr = new JsonReader(new FileReader("notizie.json"));
 			 	    	notizieJson = gson.fromJson(jr,Notizia[].class);
 			 	    	for(int i=0; i<notizieJson.length;i++) {
-			 	    		Notizia notizia = new Notizia(notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),notizieJson[i].getDescrizione(),notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink());
-			 	    		listaNotizie.add(notizia);
+			 	    		Notizia notizia = new Notizia(notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),
+			 	    				notizieJson[i].getDescrizione(),notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+			 	    		if(notizia.getCategoria()=="random"){
+			 	    			listaNotizie.add(notizia);
+			 	    		}
 			 	    	}
 			 	    }catch(FileNotFoundException e) {
 			 	    	e.getMessage();
 			 	    }
-			    	sendMessage.setText(listaNotizie.get(random.nextInt(listaNotizie.size())).toString());
-					notizia=0;
+			    	notizia=0;
+			    	sendMessage.setText(listaNotizie.get(random.nextInt(listaNotizie.size())).getLink());
+
 					break;
 				}
-			}*/
-
+			}
+			 */
 			switch(login) {
 			case 1:
 				sendMessage.setText("Utente registrato con successo!");
@@ -130,9 +170,29 @@ public class MyBot extends TelegramLongPollingBot {
 						+ " utilizzati su telegram!");
 
 				break;
-				
+
 			case "/test":
-				sendMessage.setText("Ciao: " +  update.getMessage().getChat().getFirstName() + update.getMessage().getChat().getLastName());
+				Random random = new Random();
+				ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+				Notizia[] notizieJson;
+				Gson gson = new GsonBuilder().setPrettyPrinting().create();
+				try {
+					JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+					notizieJson = gson.fromJson(jr,Notizia[].class);
+					for(int i=0; i<notizieJson.length;i++) {
+						Notizia notizia = new Notizia(notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),
+								notizieJson[i].getDescrizione(),notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+						if(notizia.getCategoria()=="random"){
+							listaNotizie.add(notizia);
+						}
+					}
+				}catch(FileNotFoundException e) {
+					e.getMessage();
+				}
+				notizia=0;
+				//salvo la notizia
+				currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+				sendMessage.setText(listaNotizie.get(random.nextInt(listaNotizie.size())).getLink());
 				break;
 
 			case "/notizia":
@@ -141,6 +201,8 @@ public class MyBot extends TelegramLongPollingBot {
 				break;
 
 			case "/voto":
+				voto=1;
+				sendMessage.setText("Inserisci un voto da 1 a 10 per la notizia");
 
 				break;
 

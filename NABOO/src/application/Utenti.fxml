@@ -5,31 +5,62 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestioneUtenti">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestioneUtenti">
 	<children>
-    <TableView fx:id="tableView" layoutX="35.0" layoutY="28.0" prefHeight="200.0" prefWidth="302.0">
-    <columns>
-        <TableColumn fx:id="Nome" prefWidth="75.0" text="Nome" />
-        <TableColumn fx:id="Cognome" prefWidth="75.0" text="Cognome" />
-        <TableColumn fx:id="Username" prefWidth="75.0" text="Username" />
-        <TableColumn fx:id="Password" prefWidth="75.0" text="Password" />
-    </columns>
-    </TableView>
-      <Button layoutX="265.0" layoutY="448.0" mnemonicParsing="false" onAction="#goBack" text="Indietro" />
-      <Button layoutX="428.0" layoutY="152.0" mnemonicParsing="false" onAction="#updateUsers" text="Aggiorna Lista" />
-      <Button layoutX="424.0" layoutY="47.0" mnemonicParsing="false" onAction="#deleteUser" text="Elimina utente" />
-      <Button layoutX="424.0" layoutY="103.0" mnemonicParsing="false" onAction="#modifyUser" text="Modifica utente" />
-      <TextField fx:id="ModificaNome" layoutX="160.0" layoutY="301.0" text="" />
-      <TextField fx:id="ModificaCognome" layoutX="160.0" layoutY="343.0" text="" />
-      <TextField fx:id="ModificaUsername" layoutX="160.0" layoutY="393.0" text="" />
+		<TableView fx:id="tableView" layoutX="105.0" layoutY="33.0" prefHeight="309.0" prefWidth="749.0">
+			<columns>
+				<TableColumn fx:id="Nome" prefWidth="180.0" text="Nome" />
+				<TableColumn fx:id="Cognome" prefWidth="175.0" text="Cognome" />
+				<TableColumn fx:id="Username" prefWidth="186.0" text="Username" />
+				<TableColumn fx:id="Password" prefWidth="207.0" text="Password" />
+			</columns>
+		</TableView>
+		<Button layoutX="590.0" layoutY="690.0" mnemonicParsing="false" onAction="#goBack" prefHeight="54.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Indietro" textFill="WHITE" />
+		<Button layoutX="991.0" layoutY="273.0" mnemonicParsing="false" onAction="#updateUsers" prefHeight="54.0" prefWidth="125.0" text="Aggiorna Lista" />
+		<Button layoutX="991.0" layoutY="187.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="54.0" prefWidth="125.0" text="Elimina utente" />
+		<Button layoutX="991.0" layoutY="104.0" mnemonicParsing="false" onAction="#modifyUser" prefHeight="54.0" prefWidth="125.0" text="Modifica utente" />
+		<TextField fx:id="ModificaNome" layoutX="256.0" layoutY="400.0" prefHeight="43.0" prefWidth="223.0" text="nome" />
+		<TextField fx:id="ModificaCognome" layoutX="256.0" layoutY="470.0" prefHeight="43.0" prefWidth="223.0" text="cognome" />
+		<TextField fx:id="ModificaUsername" layoutX="256.0" layoutY="543.0" prefHeight="43.0" prefWidth="223.0" text="username" />
+		<TextField fx:id="ModificaPassword" layoutX="256.0" layoutY="612.0" prefHeight="43.0" prefWidth="223.0" text="password" />
+
+		<Text layoutX="122.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Text layoutX="122.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Text layoutX="122.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="125.0">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Text layoutX="122.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="125.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+		<Button layoutX="588.0" layoutY="466.0" mnemonicParsing="false" onAction="#saveUser" prefHeight="54.0" prefWidth="125.0" text="Salva Modifiche" />
+		<Text layoutX="275.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica/Aggiungi Utente">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Text>
+		
+		<Button layoutX="588.0" layoutY="558.0" mnemonicParsing="false" onAction="#addUser" prefHeight="54.0" prefWidth="125.0" text="Aggiungi Utente" />
+		<Text layoutX="915.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleziona l'utente sulla tabella e poi premi il pulsante modifica o elimina" textAlignment="CENTER" wrappingWidth="277.8515625">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Text>
       
-      <Text layoutX="63.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
-      <Text layoutX="54.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome" />
-      <Text layoutX="53.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
-      <Button layoutX="368.0" layoutY="331.0" mnemonicParsing="false" onAction="#saveUser" text="Salva Modifiche" />
-      <Text layoutX="165.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica/Aggiungi Utente" />
-      <Button layoutX="366.0" layoutY="381.0" mnemonicParsing="false" onAction="#addUser" text="Aggiungi Utente" />
-</children>
+      
+	</children>
 </AnchorPane>

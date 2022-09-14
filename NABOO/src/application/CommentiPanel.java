@@ -75,5 +75,11 @@ public class CommentiPanel {
     	popolaLista();
     	setTable();
     }
+    
+    public void goBack() throws IOException {
+    	Main pagina = new Main();
+		pagina.cambiaPagina("AdminPanel.fxml");
+		
+    }
 
 }

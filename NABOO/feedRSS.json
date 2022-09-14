@@ -1,3 +1,17 @@
 [
-
+  {
+    "link": "https://www.ansa.it/sito/ansait_rss.xml",
+    "categoria": "random",
+    "fonte": "ansa"
+  },
+  {
+    "link": "http://feeds.feedburner.com/Androidiani",
+    "categoria": "tecnologia",
+    "fonte": "androidiani"
+  },
+  {
+    "link": "https://www.ilsole24ore.com/rss/mondo.xml",
+    "categoria": "politica",
+    "fonte": "ilsole24ore"
+  }
 ]

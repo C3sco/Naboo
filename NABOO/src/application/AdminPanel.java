@@ -56,5 +56,9 @@ public class AdminPanel {
 		Main m = new Main();
 		m.RSSReadAnsa();
 	}
+	public void gestisciFeed() throws Exception{
+		Main pagina = new Main();
+		pagina.cambiaPagina("FeedRSS.fxml");
+	}
 
 }

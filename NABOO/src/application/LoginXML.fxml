@@ -4,26 +4,51 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login">
-   <children>
-      <Label id="labelAdmin" layoutX="320.0" layoutY="193.0" text="LOGIN AMMINISTRATORE">
-         <font>
-            <Font name="System Italic" size="12.0" />
-         </font></Label>
-     
-      <TextField id="userAdmin" fx:id="userAdmin" alignment="CENTER" layoutX="314.0" layoutY="241.0" onAction="#loginAdmin" promptText="Username" />
-      <Button id="loginAdmin" fx:id="loginAdminButton" layoutX="361.0" layoutY="349.0" mnemonicParsing="false" onAction="#loginAdmin" text="LOG IN">
-         <effect>
-            <Blend />
-         </effect></Button>
-      <TextField id="psswAdmin" fx:id="pswAdmin" alignment="CENTER" layoutX="314.0" layoutY="288.0" onAction="#loginAdmin" promptText="Password" />
-      <Label id="labelAdmin" layoutX="275.0" layoutY="91.0" prefHeight="37.0" prefWidth="226.0" text="BENVENUTO SU NABOO!" textAlignment="CENTER" textFill="#e80a0a">
-         <font>
-            <Font name="Bodoni MT" size="18.0" />
-         </font>
-      </Label>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+	prefWidth="1300.0" style="-fx-background-color: black;"
+	xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Login">
+
+	<children>
+		<ImageView fitHeight="497.0" fitWidth="556.0"
+			layoutX="401.0" layoutY="151.0" pickOnBounds="true">
+			<image>
+				<Image url="@../NabooImg.jpg" />
+			</image>
+		</ImageView>
+		<Label id="labelAdmin" layoutX="538.0" layoutY="277.0"
+			prefHeight="35.0" prefWidth="284.0" text="LOGIN AMMINISTRATORE"
+			textFill="WHITE">
+			<font>
+				<Font name="System Italic" size="24.0" />
+			</font>
+		</Label>
+
+		<TextField id="userAdmin" fx:id="userAdmin"
+			alignment="CENTER" layoutX="606.0" layoutY="339.0"
+			onAction="#loginAdmin" promptText="Username" />
+		<Button id="loginAdmin" fx:id="loginAdminButton"
+			layoutX="652.0" layoutY="459.0" mnemonicParsing="false"
+			onAction="#loginAdmin" text="LOG IN">
+			<effect>
+				<Blend />
+			</effect>
+		</Button>
+		<TextField id="psswAdmin" fx:id="pswAdmin"
+			alignment="CENTER" layoutX="605.0" layoutY="400.0"
+			onAction="#loginAdmin" promptText="Password" />
+		<Label id="labelAdmin" layoutX="363.0" layoutY="91.0"
+			prefHeight="60.0" prefWidth="633.0" text="BENVENUTO SU NABOO!"
+			textAlignment="CENTER" textFill="#e80a0a">
+			<font>
+				<Font name="Bodoni MT" size="48.0" />
+			</font>
+		</Label>
+	</children>
 </AnchorPane>

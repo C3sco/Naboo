@@ -3,7 +3,7 @@ package application;
 public class Utente {
 	private String nome;
 	private String cognome;
-	public String username;
+	private String username;
 	private String password;
 	
 	public Utente(String nome, String cognome, String username, String password) {

@@ -1,10 +1,8 @@
 [
-	{
-		"titoloNotizia":"Prova",
-		"linkNotizia":"www.prova.it",
-		"usernameUtente":"Cesco",
-		"commento":"ci sta"
-	
-	}
-
+  {
+    "titoloNotizia": "Prova",
+    "linkNotizia": "www.prova.it",
+    "usernameUtente": "Cesco1",
+    "commento": "ci sta"
+  }
 ]

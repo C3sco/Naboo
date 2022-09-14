@@ -2,7 +2,9 @@ package application;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -59,6 +61,38 @@ public class NotiziePanel {
     	Categoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
     	
     	tableNotizie.setItems(listaNotizie);
+    }
+    
+    public void deleteNotizia() throws IOException{
+    	Notizia[] notizieJson;
+	    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	    
+	    ArrayList<Notizia> lista = new ArrayList<Notizia>();
+    	JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+    	notizieJson = gson.fromJson(jr,Notizia[].class);
+    	for(int i=0; i<notizieJson.length;i++) {
+    		if(!notizieJson[i].getLink().equalsIgnoreCase(tableNotizie.getSelectionModel().getSelectedItem().getLink())) {
+    			lista.add(notizieJson[i]);
+    		}
+    	}
+    	Notizia[] userFinal = lista.toArray(new Notizia[0]);
+    	FileWriter fw = new FileWriter("notizie.json");
+		gson.toJson(userFinal,fw);
+		fw.flush();
+		fw.close();
+    	
+    }
+    
+    public void updateNotizie() throws IOException {
+    	tableNotizie.getItems().clear();
+    	popolaLista();
+    	setTable();
+    }
+    
+    public void goBack() throws IOException {
+    	Main pagina = new Main();
+		pagina.cambiaPagina("AdminPanel.fxml");
+		
     }
 
 }
