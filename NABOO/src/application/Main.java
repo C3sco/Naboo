@@ -5,12 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundImage;
-import javafx.scene.layout.BackgroundPosition;
-import javafx.scene.layout.BackgroundRepeat;
-import javafx.scene.layout.BackgroundSize;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -35,7 +29,7 @@ public class Main extends Application {
 	private static Stage pagina;
 	static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	ArrayList<Url> listaURL = new ArrayList<Url>();
-	
+
 	@Override
 	public void start(Stage primaryStage) {
 		pagina = primaryStage;
@@ -50,12 +44,12 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			RSSReadAnsa();
-			
+
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	//metodo per ricevere le notizie dai feed
 	public void RSSReadAnsa() throws Exception {
 		listaURL.clear();
@@ -67,17 +61,17 @@ public class Main extends Application {
 		XmlReader readerTecnologia = new XmlReader(urlTecnologia);
 		XmlReader readerPolitica = new XmlReader(urlPolitica);
 		Url[] urlJson;
-		
+
 		try {
 			JsonReader jr = new JsonReader(new FileReader("feedRSS.json"));
-			 urlJson = gson.fromJson(jr,Url[].class);
-			 for(int i=0; i<urlJson.length;i++) {
-				 Url url = new Url(urlJson[i].getLink(),urlJson[i].getCategoria(),urlJson[i].getFonte());
-				 listaURL.add(url);
-			 }
+			urlJson = gson.fromJson(jr,Url[].class);
+			for(int i=0; i<urlJson.length;i++) {
+				Url url = new Url(urlJson[i].getLink(),urlJson[i].getCategoria(),urlJson[i].getFonte());
+				listaURL.add(url);
+			}
 		}catch(FileNotFoundException e) {
- 	    	e.getMessage();
-			
+			e.getMessage();
+
 		}
 		for(int i=0;i<listaURL.size();i++) {
 			URL urlLista = new URL(listaURL.get(i).getLink());
@@ -85,7 +79,7 @@ public class Main extends Application {
 			try {
 				SyndFeedInput inp = new SyndFeedInput();
 				SyndFeed feed = inp.build(reader);
-				
+
 				for(Object obj : feed.getEntries()) {
 					SyndEntry entry = (SyndEntry) obj;
 					Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
@@ -97,7 +91,7 @@ public class Main extends Application {
 					reader.close();
 				}
 			}
-			
+
 		}
 		Notizia[] notizieFinal = listaNotizie.toArray(new Notizia[0]);
 		FileWriter fw = new FileWriter("notizie.json");
@@ -109,7 +103,7 @@ public class Main extends Application {
 		try {
 			SyndFeedInput inp = new SyndFeedInput();
 			SyndFeed feed = inp.build(readerRandom);
-			
+
 			for(Object obj : feed.getEntries()) {
 				SyndEntry entry = (SyndEntry) obj;
 				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
@@ -121,30 +115,30 @@ public class Main extends Application {
 				readerRandom.close();
 			}
 		}
-		
+
 		//Salvo le news sulla tecnologia
 		try {
 			SyndFeedInput inp = new SyndFeedInput();
 			SyndFeed feed = inp.build(readerTecnologia);
-			
+
 			for(Object obj : feed.getEntries()) {
 				SyndEntry entry = (SyndEntry) obj;
 				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
 						entry.getAuthor(),"androidiani",entry.getLink(),entry.getCategories().toArray().toString());
 				listaNotizie.add(notizia);
 			}
-			
+
 		}finally {
 			if(readerTecnologia!=null) {
 				readerTecnologia.close();
 			}
 		}
-		
+
 		//Salvo le news sulla politica
 		try {
 			SyndFeedInput inp = new SyndFeedInput();
 			SyndFeed feed = inp.build(readerPolitica);
-			
+
 			for(Object obj : feed.getEntries()) {
 				SyndEntry entry = (SyndEntry) obj;
 				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
@@ -156,25 +150,25 @@ public class Main extends Application {
 				readerRandom.close();
 			}
 		}*/
-		
-		
+
+
 	}
-	
-	
+
+
 	public void cambiaPagina(String fxml) throws IOException{
 		Parent p = FXMLLoader.load(getClass().getResource(fxml));
 		pagina.getScene().setRoot(p);
 	}
-	
+
 	public static void main(String[] args) {
 		TelegramBotsApi botsApi;
-        try {
-            botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            botsApi.registerBot(new MyBot());
-        } catch (TelegramApiException e) {
-           
-            e.printStackTrace();
-        }
+		try {
+			botsApi = new TelegramBotsApi(DefaultBotSession.class);
+			botsApi.registerBot(new MyBot());
+		} catch (TelegramApiException e) {
+
+			e.printStackTrace();
+		}
 		launch(args);
 	}
 }

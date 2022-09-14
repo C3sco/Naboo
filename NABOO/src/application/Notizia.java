@@ -1,13 +1,7 @@
 package application;
 
-import java.time.LocalDateTime;
-import java.util.Date;
-
-import com.sun.syndication.feed.synd.SyndContent;
-import com.sun.syndication.feed.synd.SyndFeed;
-
 public class Notizia {
-	
+
 	public String titolo;
 	public String timestamp;
 	public String descrizione;
@@ -15,8 +9,8 @@ public class Notizia {
 	public String fonte;
 	public String link;
 	public String categoria;
-	
-	
+
+
 	public Notizia(String titolo,String timestamp,String descrizione,String autore, String fonte,String link,String categoria) {
 		this.titolo=titolo;
 		this.timestamp=timestamp;
@@ -26,12 +20,12 @@ public class Notizia {
 		this.link=link;
 		this.categoria=categoria;
 
-		
+
 	}
 	public String getTitolo() {
 		return titolo;
 	}
-	
+
 	public String getTimestamp() {
 		return timestamp;
 	}
@@ -52,8 +46,8 @@ public class Notizia {
 	}
 	@Override
 	public String toString() {
-		return "Titolo=" + titolo + ",\n" + "Timestamp=" + timestamp + ",\n" +  "Descrizione=" + descrizione + ",\n" + "Autore="
-				+ autore + ",\n" +  "Fonte=" + fonte + ",\n" + "Link=" + link + "]";
+		return "Titolo: " + titolo + ",\n" + "Timestamp: " + timestamp + ",\n" +  "Descrizione: " + descrizione + ",\n" + "Autore: "
+				+ autore + ",\n" +  "Fonte: " + fonte + ",\n" + "Link: " + link + "]";
 	}
 
 }

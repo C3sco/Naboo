@@ -4,12 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ResourceBundle;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -18,7 +14,6 @@ import com.google.gson.stream.JsonReader;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -131,8 +126,8 @@ public class GestioneUtenti{
 			fw.flush();
 			fw.close();
 		}catch(FileNotFoundException e) {
- 	    	e.getMessage();
- 	    }
+			e.getMessage();
+		}
 		//modifico l'username nei relativi commenti dell'utente
 		try {
 			JsonReader jr = new JsonReader(new FileReader("commenti.json"));
@@ -149,10 +144,10 @@ public class GestioneUtenti{
 			gson.toJson(commentiFinal,fw);
 			fw.flush();
 			fw.close();
-			
+
 		}catch(FileNotFoundException e) {
- 	    	e.getMessage();
- 	    }
+			e.getMessage();
+		}
 		//modifico l'username nei relativi voti dell'utente
 		try {
 			JsonReader jr = new JsonReader(new FileReader("voti.json"));
@@ -169,67 +164,67 @@ public class GestioneUtenti{
 			gson.toJson(votiFinal,fw);
 			fw.flush();
 			fw.close();
-			
+
 		}catch(FileNotFoundException e) {
- 	    	e.getMessage();
- 	    }
+			e.getMessage();
+		}
 	}
-			
-/*
+
+	/*
 			try {
 			}*/
 
-			//metodo per eliminare un utente
-			public void deleteUser() throws IOException {
-				Utente[] utentiJson;
-				Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	//metodo per eliminare un utente
+	public void deleteUser() throws IOException {
+		Utente[] utentiJson;
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-				ArrayList<Utente> lista = new ArrayList<>();
-				JsonReader jr = new JsonReader(new FileReader("users.json"));
-				utentiJson = gson.fromJson(jr,Utente[].class);
-				for(int i=0; i<utentiJson.length;i++) {
-					if(!utentiJson[i].getPassword().equalsIgnoreCase(tableView.getSelectionModel().getSelectedItem().getPassword())) {
-						lista.add(utentiJson[i]);
-					}
-				}
-				Utente[] userFinal = lista.toArray(new Utente[0]);
-				FileWriter fw = new FileWriter("users.json");
-				gson.toJson(userFinal,fw);
-				fw.flush();
-				fw.close();
-
-			}
-
-			//metodo per aggiungere un utente
-			public void addUser() throws IOException {
-				Utente[] utentiJson;
-				Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-				ArrayList<Utente> lista = new ArrayList<>();
-				JsonReader jr = new JsonReader(new FileReader("users.json"));
-				utentiJson = gson.fromJson(jr,Utente[].class);
-				for(int i=0; i<utentiJson.length;i++) {
-					lista.add(utentiJson[i]);
-				}
-				String nome = ModificaNome.getText();
-				String cognome = ModificaCognome.getText();
-				String username = ModificaUsername.getText();
-				String password = ModificaPassword.getText();
-				Utente user = new Utente(nome,cognome,username,password);
-
-				lista.add(user);
-
-				Utente[] userFinal = lista.toArray(new Utente[0]);
-				FileWriter fw = new FileWriter("users.json");
-				gson.toJson(userFinal,fw);
-				fw.flush();
-				fw.close();
-
-			}
-
-			public void updateUsers() throws IOException {
-				tableView.getItems().clear();
-				popolaLista();
-				setTable();
+		ArrayList<Utente> lista = new ArrayList<>();
+		JsonReader jr = new JsonReader(new FileReader("users.json"));
+		utentiJson = gson.fromJson(jr,Utente[].class);
+		for(int i=0; i<utentiJson.length;i++) {
+			if(!utentiJson[i].getPassword().equalsIgnoreCase(tableView.getSelectionModel().getSelectedItem().getPassword())) {
+				lista.add(utentiJson[i]);
 			}
 		}
+		Utente[] userFinal = lista.toArray(new Utente[0]);
+		FileWriter fw = new FileWriter("users.json");
+		gson.toJson(userFinal,fw);
+		fw.flush();
+		fw.close();
+
+	}
+
+	//metodo per aggiungere un utente
+	public void addUser() throws IOException {
+		Utente[] utentiJson;
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+		ArrayList<Utente> lista = new ArrayList<>();
+		JsonReader jr = new JsonReader(new FileReader("users.json"));
+		utentiJson = gson.fromJson(jr,Utente[].class);
+		for(int i=0; i<utentiJson.length;i++) {
+			lista.add(utentiJson[i]);
+		}
+		String nome = ModificaNome.getText();
+		String cognome = ModificaCognome.getText();
+		String username = ModificaUsername.getText();
+		String password = ModificaPassword.getText();
+		Utente user = new Utente(nome,cognome,username,password);
+
+		lista.add(user);
+
+		Utente[] userFinal = lista.toArray(new Utente[0]);
+		FileWriter fw = new FileWriter("users.json");
+		gson.toJson(userFinal,fw);
+		fw.flush();
+		fw.close();
+
+	}
+
+	public void updateUsers() throws IOException {
+		tableView.getItems().clear();
+		popolaLista();
+		setTable();
+	}
+}

@@ -28,10 +28,12 @@ public class MyBot extends TelegramLongPollingBot {
 	Voto[] votiJson;
 	ArrayList<Utente> listaUsers = new ArrayList<Utente>();
 	ArrayList<Voto> listaVoti = new ArrayList<Voto>();
+	ArrayList<Commento> listaCommenti = new ArrayList<Commento>();
 	int register = 0;
 	int login = 0;
 	int notizia = 0;
 	int voto = 0;
+	int commento = 0;
 	Notizia currentNotizia = new Notizia("a","a","a","a","a","a","a");
 
 	@Override
@@ -136,17 +138,51 @@ public class MyBot extends TelegramLongPollingBot {
 				notizia = 1;
 				break;
 			}
-			
-			
-			
+
+
+
 			switch(login) {
 			case 1:
 				sendMessage.setText("Utente registrato con successo!");
 				break;
 			}
 
+			switch(commento) {
+			case 1:
+				commento = 0;
+				listaCommenti.clear();
+				int duplicate = 0;
+
+				Commento commentoInsert = new Commento(currentNotizia.getTitolo(),currentNotizia.getLink(),username,message);
+				try {
+					JsonReader jr = new JsonReader(new FileReader("commenti.json"));
+					commentiJson = gson.fromJson(jr,Commento[].class);
+					for(int i=0;i<commentiJson.length;i++) {
+						listaCommenti.add(commentiJson[i]);
+						if(commentiJson[i].getUsernameUtente().equals(username) & commentiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { //controllo che non ci sia già un commento dell'utente nella notizia
+							duplicate = 1;
+							sendMessage.setText("Commento già inserito!");
+						}
+					}
+					if(duplicate==0) {
+						listaCommenti.add(commentoInsert);
+						sendMessage.setText("Commento inserito correttamente!");
+					}
+					Commento[] commentiFinal = listaCommenti.toArray(new Commento[0]);
+					FileWriter fw = new FileWriter("commenti.json");
+					gson.toJson(commentiFinal,fw);
+					fw.flush();
+					fw.close();
+				}catch(IOException e) {
+					e.getMessage();
+				}
+
+
+				break;
+			}
+
 			switch(message) {
-			
+
 
 			case "/registrazione" :
 				register = 1;
@@ -154,13 +190,13 @@ public class MyBot extends TelegramLongPollingBot {
 						+ " utilizzati su telegram!");
 
 				break;
-				
+
 
 			case "/notizia":
-					sendMessage.setText("Che notizie vuoi avere? Scegli uno dei seguenti campi: random | tecnologia | politica | scienza");
-					notizia = 1;			
-					break;
-				
+				sendMessage.setText("Che notizie vuoi avere? Scegli uno dei seguenti campi: random | tecnologia | politica | scienza");
+				notizia = 1;			
+				break;
+
 			case "random":
 				if(notizia == 1) {
 					Random random = new Random();
@@ -171,82 +207,101 @@ public class MyBot extends TelegramLongPollingBot {
 					try {
 						JsonReader jr = new JsonReader(new FileReader("notizie.json"));
 						notizieJson = gson.fromJson(jr,Notizia[].class);
-						
+
 						for(int i=0; i<notizieJson.length;i++) {																			
 							Notizia news = new Notizia(
-									notizieJson[i].getTitolo(),
-									notizieJson[i].getTimestamp(),
-									notizieJson[i].getDescrizione(),
-									notizieJson[i].getAutore(),
-									notizieJson[i].getFonte(),
-									notizieJson[i].getLink(),
-									notizieJson[i].getCategoria());
-								listaNotizie.add(news);							
+									notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),notizieJson[i].getDescrizione(),
+									notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+							listaNotizie.add(news);							
 						}
 						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
 						print += currentNotizia.toString();
-						/*
-						for(int i = 0; i < listaNotizie.size(); i++) {
-							if(listaNotizie.get(i).getCategoria().equals("random")) {
-								
-								tmp += listaNotizie.get(i).getTitolo() + "\n";
-								
-							}
-						}*/
-						
+
+
 					}catch(FileNotFoundException e) {
 						e.getMessage();
 					}
 					System.out.println(print);
 					sendMessage.setText( print);
-					//salvo la notizia
-					//currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
-					/*String testo = "";
-					for(int i=0;i<listaNotizie.size();i++) {
-						testo += listaNotizie.get(i).getLink() + "\n" ;
-					}
-					sendMessage.setText(testo);*/
-					 
-					
-					//sendMessage.setText("EMOTE DEL FAZZONE");			
-					/*
-					String tmp = "";
-					try {
-						JsonReader reader = new JsonReader(new FileReader("notizie.json"));
-						notizieJson = gson.fromJson(reader, Notizia[].class);
-						
-						
-					} catch(FileNotFoundException e) {
-						System.out.println(e);
-					}
-					*/			
+
 					notizia = 0;
 				}
 				break;
-				
+
 			case "tecnologia":	
 				if(notizia == 1) {
-					sendMessage.setText("  TECNOLOGIA");
+					Random random = new Random();
+					ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+					Notizia[] notizieJson;
+					Gson gson = new GsonBuilder().setPrettyPrinting().create();
+					String print = "";
+					try {
+						JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+						notizieJson = gson.fromJson(jr,Notizia[].class);
+
+						for(int i=0; i<notizieJson.length;i++) {																			
+							Notizia news = new Notizia(
+									notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),notizieJson[i].getDescrizione(),
+									notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+							if(notizieJson[i].getCategoria().equals("tecnologia")) {
+								listaNotizie.add(news);							
+							}
+						}
+						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+						print += currentNotizia.toString();
+
+
+					}catch(FileNotFoundException e) {
+						e.getMessage();
+					}
+					System.out.println(print);
+					sendMessage.setText( print);
+
 					notizia = 0;
 				}
 				break;
-				
+
 			case "politica":	
 				if(notizia == 1) {
-					sendMessage.setText("  politica");
+					Random random = new Random();
+					ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+					Notizia[] notizieJson;
+					Gson gson = new GsonBuilder().setPrettyPrinting().create();
+					String print = "";
+					try {
+						JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+						notizieJson = gson.fromJson(jr,Notizia[].class);
+
+						for(int i=0; i<notizieJson.length;i++) {																			
+							Notizia news = new Notizia(
+									notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),notizieJson[i].getDescrizione(),
+									notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+							if(notizieJson[i].getCategoria().equals("politica")) {
+								listaNotizie.add(news);							
+							}
+						}
+						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+						print += currentNotizia.toString();
+
+
+					}catch(FileNotFoundException e) {
+						e.getMessage();
+					}
+					System.out.println(print);
+					sendMessage.setText( print);
 					notizia = 0;
 				}
 				break;
-					
+
 			case "scienza":	
 				if(notizia == 1) {
 					sendMessage.setText("  politica");
 					notizia = 0;
 				}
 				break;
-					
-				
-				
+
+
+
 			case "/voto":
 				voto = 1;
 				sendMessage.setText("Inserisci un voto da 1 a 10 per la notizia");
@@ -254,6 +309,9 @@ public class MyBot extends TelegramLongPollingBot {
 				break;
 
 			case "/commento":
+				commento = 1;
+				sendMessage.setText("Inserisci un commento per l'ultima notizia visualizzata");
+
 
 				break;
 

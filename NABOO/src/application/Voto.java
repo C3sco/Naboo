@@ -4,7 +4,7 @@ public class Voto {
 	private int numero;
 	private String linkNotizia;
 	private String usernameUtente;
-	
+
 	public Voto(int numero, String linkNotizia, String usernameUtente) {
 		this.numero=numero;
 		this.linkNotizia=linkNotizia;
@@ -26,7 +26,7 @@ public class Voto {
 	public void setLinkNotizia(String linkNotizia) {
 		this.linkNotizia = linkNotizia;
 	}
-	
+
 	public String getUsernameUtente() {
 		return usernameUtente;
 	}

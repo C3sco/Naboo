@@ -5,7 +5,7 @@ public class Commento {
 	public String linkNotizia;
 	public String usernameUtente;
 	public String commento;
-	
+
 	public Commento (String titoloNotizia, String linkNotizia, String usernameUtente, String commento){
 		this.titoloNotizia = titoloNotizia;
 		this.linkNotizia = linkNotizia;
@@ -36,5 +36,5 @@ public class Commento {
 	public void setCommento(String commento) {
 		this.commento = commento;
 	}
-	
+
 }

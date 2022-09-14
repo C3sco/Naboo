@@ -5,14 +5,14 @@ public class Utente {
 	private String cognome;
 	private String username;
 	private String password;
-	
+
 	public Utente(String nome, String cognome, String username, String password) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.username = username;
 		this.password = password;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -35,7 +35,7 @@ public class Utente {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
@@ -43,6 +43,6 @@ public class Utente {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 
 }

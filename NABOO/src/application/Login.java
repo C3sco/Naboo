@@ -10,18 +10,18 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 public class Login {
-	
+
 	@FXML private TextField userAdmin;
 	@FXML private TextField pswAdmin;
-	
+
 	public void loginAdmin() throws IOException{
 		String inputF = "admin.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		
+
 		String user = userAdmin.getText();
 		String psw = pswAdmin.getText();
 		Admin admin;
-		
+
 		Main pagina = new Main();
 
 		try {
@@ -31,13 +31,11 @@ public class Login {
 					admin.getPassword().equals(psw)) {
 				pagina.cambiaPagina("AdminPanel.fxml");
 			}
-			
+
 		}catch(FileNotFoundException e) {
 			e.getMessage();
 		}
-		
+
 	}
-	
-	
 
 }
