@@ -32,7 +32,7 @@ public class MyBot extends TelegramLongPollingBot {
 	int login = 0;
 	int notizia = 0;
 	int voto = 0;
-	Notizia currentNotizia;
+	Notizia currentNotizia = new Notizia("a","a","a","a","a","a","a");
 
 	@Override
 	public String getBotUsername() {
@@ -99,6 +99,7 @@ public class MyBot extends TelegramLongPollingBot {
 
 			switch(voto) {
 			case 1: 
+				voto = 0;
 				listaVoti.clear();
 				int vote = Integer.parseInt(message);
 				int duplicate = 0;
@@ -111,10 +112,12 @@ public class MyBot extends TelegramLongPollingBot {
 							listaVoti.add(votiJson[i]);
 							if(votiJson[i].getUsernameUtente().equals(username) & votiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { //controllo che non ci sia già un voto dell'utente nella notizia
 								duplicate = 1;
+								sendMessage.setText("Voto già inserito!");
 							}
 						}
 						if(duplicate==0) {
 							listaVoti.add(votoInsert);
+							sendMessage.setText("Voto inserito correttamente!");
 						}
 						Voto[] votiFinal = listaVoti.toArray(new Voto[0]);
 						FileWriter fw = new FileWriter("voti.json");
@@ -127,35 +130,15 @@ public class MyBot extends TelegramLongPollingBot {
 
 				}
 			}
-			/*
-			switch(notizia) {
-			case 1:
-				switch(message) {
-				case "random":
-					Random random = new Random();
-					ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
-					Notizia[] notizieJson;
-				    Gson gson = new GsonBuilder().setPrettyPrinting().create();
-			    	try {
-			 	    	JsonReader jr = new JsonReader(new FileReader("notizie.json"));
-			 	    	notizieJson = gson.fromJson(jr,Notizia[].class);
-			 	    	for(int i=0; i<notizieJson.length;i++) {
-			 	    		Notizia notizia = new Notizia(notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),
-			 	    				notizieJson[i].getDescrizione(),notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
-			 	    		if(notizia.getCategoria()=="random"){
-			 	    			listaNotizie.add(notizia);
-			 	    		}
-			 	    	}
-			 	    }catch(FileNotFoundException e) {
-			 	    	e.getMessage();
-			 	    }
-			    	notizia=0;
-			    	sendMessage.setText(listaNotizie.get(random.nextInt(listaNotizie.size())).getLink());
 
-					break;
-				}
+			switch(notizia) { 
+			case 1: 
+				notizia = 1;
+				break;
 			}
-			 */
+			
+			
+			
 			switch(login) {
 			case 1:
 				sendMessage.setText("Utente registrato con successo!");
@@ -163,6 +146,7 @@ public class MyBot extends TelegramLongPollingBot {
 			}
 
 			switch(message) {
+			
 
 			case "/registrazione" :
 				register = 1;
@@ -170,38 +154,101 @@ public class MyBot extends TelegramLongPollingBot {
 						+ " utilizzati su telegram!");
 
 				break;
-
-			case "/test":
-				Random random = new Random();
-				ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
-				Notizia[] notizieJson;
-				Gson gson = new GsonBuilder().setPrettyPrinting().create();
-				try {
-					JsonReader jr = new JsonReader(new FileReader("notizie.json"));
-					notizieJson = gson.fromJson(jr,Notizia[].class);
-					for(int i=0; i<notizieJson.length;i++) {
-						Notizia notizia = new Notizia(notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),
-								notizieJson[i].getDescrizione(),notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
-						if(notizia.getCategoria()=="random"){
-							listaNotizie.add(notizia);
-						}
-					}
-				}catch(FileNotFoundException e) {
-					e.getMessage();
-				}
-				notizia=0;
-				//salvo la notizia
-				currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
-				sendMessage.setText(listaNotizie.get(random.nextInt(listaNotizie.size())).getLink());
-				break;
+				
 
 			case "/notizia":
-				notizia = 1;
-				sendMessage.setText("Che notizie vuoi avere? Scegli uno dei seguenti campi: random | tecnologia | politica | scienza");
+					sendMessage.setText("Che notizie vuoi avere? Scegli uno dei seguenti campi: random | tecnologia | politica | scienza");
+					notizia = 1;			
+					break;
+				
+			case "random":
+				if(notizia == 1) {
+					Random random = new Random();
+					ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+					Notizia[] notizieJson;
+					Gson gson = new GsonBuilder().setPrettyPrinting().create();
+					String print = "";
+					try {
+						JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+						notizieJson = gson.fromJson(jr,Notizia[].class);
+						
+						for(int i=0; i<notizieJson.length;i++) {																			
+							Notizia news = new Notizia(
+									notizieJson[i].getTitolo(),
+									notizieJson[i].getTimestamp(),
+									notizieJson[i].getDescrizione(),
+									notizieJson[i].getAutore(),
+									notizieJson[i].getFonte(),
+									notizieJson[i].getLink(),
+									notizieJson[i].getCategoria());
+								listaNotizie.add(news);							
+						}
+						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+						print += currentNotizia.toString();
+						/*
+						for(int i = 0; i < listaNotizie.size(); i++) {
+							if(listaNotizie.get(i).getCategoria().equals("random")) {
+								
+								tmp += listaNotizie.get(i).getTitolo() + "\n";
+								
+							}
+						}*/
+						
+					}catch(FileNotFoundException e) {
+						e.getMessage();
+					}
+					System.out.println(print);
+					sendMessage.setText( print);
+					//salvo la notizia
+					//currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+					/*String testo = "";
+					for(int i=0;i<listaNotizie.size();i++) {
+						testo += listaNotizie.get(i).getLink() + "\n" ;
+					}
+					sendMessage.setText(testo);*/
+					 
+					
+					//sendMessage.setText("EMOTE DEL FAZZONE");			
+					/*
+					String tmp = "";
+					try {
+						JsonReader reader = new JsonReader(new FileReader("notizie.json"));
+						notizieJson = gson.fromJson(reader, Notizia[].class);
+						
+						
+					} catch(FileNotFoundException e) {
+						System.out.println(e);
+					}
+					*/			
+					notizia = 0;
+				}
 				break;
-
+				
+			case "tecnologia":	
+				if(notizia == 1) {
+					sendMessage.setText("  TECNOLOGIA");
+					notizia = 0;
+				}
+				break;
+				
+			case "politica":	
+				if(notizia == 1) {
+					sendMessage.setText("  politica");
+					notizia = 0;
+				}
+				break;
+					
+			case "scienza":	
+				if(notizia == 1) {
+					sendMessage.setText("  politica");
+					notizia = 0;
+				}
+				break;
+					
+				
+				
 			case "/voto":
-				voto=1;
+				voto = 1;
 				sendMessage.setText("Inserisci un voto da 1 a 10 per la notizia");
 
 				break;

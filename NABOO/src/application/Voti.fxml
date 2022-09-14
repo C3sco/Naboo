@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VotiPanel">
+	<children>
+		<TableView fx:id="tableVoti" layoutX="105.0" layoutY="33.0" prefHeight="309.0" prefWidth="749.0">
+			<columns>
+				<TableColumn fx:id="Voto" prefWidth="231.0" text="Voto" />
+				<TableColumn fx:id="Link" prefWidth="256.0" text="Link" />
+				<TableColumn fx:id="Username" prefWidth="261.0" text="Username" />
+			</columns>
+		</TableView>
+		
+		<Button layoutX="590.0" layoutY="690.0" mnemonicParsing="false" onAction="#goBack" prefHeight="54.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Indietro" textFill="WHITE" />
+		</children>
+</AnchorPane>

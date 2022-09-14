@@ -10,5 +10,11 @@
     "cognome": "sium",
     "username": "Cesco1",
     "password": "password1234"
+  },
+  {
+    "nome": "Massimo",
+    "cognome": "Rondelli",
+    "username": "MassimoRondelli",
+    "password": "massimorondelli"
   }
 ]

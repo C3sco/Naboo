@@ -52,8 +52,8 @@ public class Notizia {
 	}
 	@Override
 	public String toString() {
-		return "Notizia [titolo=" + titolo + ", timestamp=" + timestamp + ", descrizione=" + descrizione + ", autore="
-				+ autore + ", fonte=" + fonte + ", link=" + link + "]";
+		return "Titolo=" + titolo + ",\n" + "Timestamp=" + timestamp + ",\n" +  "Descrizione=" + descrizione + ",\n" + "Autore="
+				+ autore + ",\n" +  "Fonte=" + fonte + ",\n" + "Link=" + link + "]";
 	}
 
 }

@@ -101,6 +101,7 @@ public class GestioneUtenti{
 	public void saveUser() throws IOException {
 		Utente[] utentiJson;
 		Commento[] commentiJson;
+		Voto[] votiJson;
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 		String nome = ModificaNome.getText();
@@ -132,6 +133,7 @@ public class GestioneUtenti{
 		}catch(FileNotFoundException e) {
  	    	e.getMessage();
  	    }
+		//modifico l'username nei relativi commenti dell'utente
 		try {
 			JsonReader jr = new JsonReader(new FileReader("commenti.json"));
 			commentiJson = gson.fromJson(jr,Commento[].class);
@@ -145,6 +147,26 @@ public class GestioneUtenti{
 			Commento[] commentiFinal = lista.toArray(new Commento[0]);
 			FileWriter fw = new FileWriter("commenti.json");
 			gson.toJson(commentiFinal,fw);
+			fw.flush();
+			fw.close();
+			
+		}catch(FileNotFoundException e) {
+ 	    	e.getMessage();
+ 	    }
+		//modifico l'username nei relativi voti dell'utente
+		try {
+			JsonReader jr = new JsonReader(new FileReader("voti.json"));
+			votiJson = gson.fromJson(jr,Voto[].class);
+			ArrayList<Voto> lista = new ArrayList<Voto>();
+			for(int i=0;i<votiJson.length;i++) {
+				if(votiJson[i].getUsernameUtente().equals(userSelected.getUsername())) {
+					votiJson[i].setUsernameUtente(username);
+				}
+				lista.add(votiJson[i]);
+			}
+			Voto[] votiFinal = lista.toArray(new Voto[0]);
+			FileWriter fw = new FileWriter("voti.json");
+			gson.toJson(votiFinal,fw);
 			fw.flush();
 			fw.close();
 			

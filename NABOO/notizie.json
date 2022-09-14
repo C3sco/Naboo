@@ -1,11 +1,155 @@
 [
   {
+    "titolo": "Salone nautico: a Genova 1000 barche e 170 novità",
+    "timestamp": "Wed Sep 14 16:33:35 CEST 2022",
+    "descrizione": "Fatturato in crescita del 30% e 3,3 mld di export:record storico",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/salone-nautico-a-genova-1000-barche-e-170-novita_69ca3fd6-5e3c-441b-b9ed-dcc338c0ed3a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Scioperi:Garante, appello a ridurre a 4 ore stop Tpl il 16",
+    "timestamp": "Wed Sep 14 16:33:55 CEST 2022",
+    "descrizione": "Per evitare pregiudizio diritti cittadini alla ripresa attività",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/scioperigarante-appello-a-ridurre-a-4-ore-stop-tpl-il-16_a66febcc-8cdd-4103-b70a-b6fa901510e4.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Borsa: Europa debole dopo Wall Street, banche salvano Milano",
+    "timestamp": "Wed Sep 14 16:33:45 CEST 2022",
+    "descrizione": "Btp sopra 4%, gas vola a 214 euro, corre anche il petrolio",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/borsa-europa-debole-dopo-wall-street-banche-salvano-milano_ea4c7224-e8f8-426c-bffa-6000749d5e8d.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Campionessa rafting Leonardi si prepara in 16 Paesi americani",
+    "timestamp": "Wed Sep 14 16:11:11 CEST 2022",
+    "descrizione": "Lungo fiumi distanza superiore a quella tra Brennero e Sicilia",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/altrisport/2022/09/14/campionessa-rafting-leonardi-si-prepara-in-16-paesi-americani_b868745c-29f9-4d4d-9ea4-f663729f5e6b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "E. League: Roma, Mourinho: \u0027Zaniolo gioca, cambieremo dietro\u0027",
+    "timestamp": "Wed Sep 14 16:45:18 CEST 2022",
+    "descrizione": "\u0027Dispiace avere un solo Pellegrini, ne vorrei tre\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/e.-league-roma-mourinho-zaniolo-gioca-cambieremo-dietro_e24190f2-af74-47a7-8fbe-2d43d4eef725.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Di Maio a Napoli, tra selfie e foto con la maglietta di Maradona ",
+    "timestamp": "Wed Sep 14 16:37:17 CEST 2022",
+    "descrizione": "Pranzo tra turisti. Ai commercianti \u0027su bollette vi aiuteremo\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/di-maio-a-napoli-tra-selfie-e-foto-con-maglietta-di-maradona-_9451de64-c6b7-4c2a-aba1-1c9713399d7a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ultime notizie, il Garante chiede di ridurre a 4 ore lo sciopero del trasporto del 16 settembre",
+    "timestamp": "Wed Sep 14 16:42:14 CEST 2022",
+    "descrizione": "\"Per evitare un pregiudizio ulteriore ai diritti dei cittadini utenti nella ripresa delle attività\"",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/garante-chiede-ridurre-a-4-ore-lo-sciopero-del-trasporto-del-16-settembre-_33cc76a7-ad3e-4730-ba20-4f30d9d1fdb1.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Emendamento del governo sopprime la deroga al tetto degli stipendi pubblici ",
+    "timestamp": "Wed Sep 14 16:45:55 CEST 2022",
+    "descrizione": "",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/emendamento-del-governo-sopprime-la-deroga-al-tetto-degli-stipendi-pubblici-_ad40b666-9408-4020-b379-59ef8ee6698a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Champions: Porto ko, tifosi assaltano auto famiglia Conceicao",
+    "timestamp": "Wed Sep 14 16:10:48 CEST 2022",
+    "descrizione": "Sassate e insulti, paura per moglie e figli del tecnico",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/2022/09/14/champions-porto-ko-tifosi-assaltano-auto-famiglia-conceicao_e1397729-88a5-4589-8ddd-6eb4beb94685.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Via libero definitivo Pe a direttiva Ue su salario minimo",
+    "timestamp": "Wed Sep 14 16:34:23 CEST 2022",
+    "descrizione": "Italia non sarà tenuta a introdurre regolamento",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/via-libero-definitivo-pe-a-direttiva-ue-su-salario-minimo_df837366-b01b-44f2-8108-8f76181353e5.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ultras ucciso, rischio processo per killer di Diabolik ",
+    "timestamp": "Wed Sep 14 14:19:08 CEST 2022",
+    "descrizione": "I magistrati della Dda di Roma hanno chiuso le indagini ",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cronaca/2022/09/14/ultras-ucciso-rischio-processo-per-killer-di-diabolik-_dba4b9f6-9d5d-47f7-afba-0011cd8a436a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Lufthansa:Spohr,stabilizzata con successo e Governo ripagato",
+    "timestamp": "Wed Sep 14 16:40:12 CEST 2022",
+    "descrizione": "Compagnia tornata in mani private",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/lufthansaspohrstabilizzata-con-successo-e-governo-ripagato_0f724cef-9cab-452f-bd49-59e751e6178d.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Il Colibrì di Archibugi aprirà la Festa del Cinema di Roma",
+    "timestamp": "Wed Sep 14 14:19:16 CEST 2022",
+    "descrizione": "Dal romanzo premio Strega di Veronesi film con Favino",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/14/il-colibri-di-archibugi-aprira-la-festa-del-cinema-di-roma_29cef8f9-df12-48fe-ae61-49a043093f38.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Gp Aragon, Quartararo: \u0027\u0027Pista più dura tra quelle che restano\u0027",
+    "timestamp": "Wed Sep 14 16:08:31 CEST 2022",
+    "descrizione": "\"Ma sono concentrato, voglio fare una grande gara\"",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/moto/2022/09/14/gp-aragon-quartararo-pista-piu-dura-tra-quelle-che-restano_aae1a1c5-3feb-4da6-8af7-a96bff560624.html",
+    "categoria": "random"
+  },
+  {
     "titolo": "Scuola: allarme paritarie, rischio asili chiusi da gennaio ",
-    "timestamp": "Wed Sep 14 13:51:34 CEST 2022",
+    "timestamp": "Wed Sep 14 16:42:12 CEST 2022",
     "descrizione": "\"Avevamo proposto un emendamento specifico in vista della conversione in Legge del decreto sostegni bis, ma siamo stati inascoltati\", afferma Redaelli, presidente della Fism",
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/cronaca/2022/09/14/scuola-allarme-paritarie-rischio-asili-chiusi-da-gennaio-_27b72935-ee49-40be-a9e7-bab02bb7338b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Serie A: Mariani arbitra Milan-Napoli",
+    "timestamp": "Wed Sep 14 16:12:33 CEST 2022",
+    "descrizione": "Monza-Juventus a Maresca, Atalanta-Roma a Chiffi",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/serie-a-mariani-arbitra-milan-napoli_1c014f72-a344-4cc7-9206-f601bbb6baba.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Il Bayern perde Hernandez per \u0027diverse settimane\u0027",
+    "timestamp": "Wed Sep 14 16:12:00 CEST 2022",
+    "descrizione": "Nazionale francese infortunato nel finale contro il Barcellona",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/calcio-il-bayern-perde-hernandez-per-diverse-settimane_7bff8f83-c66c-485f-8125-b38ce677d719.html",
     "categoria": "random"
   },
   {
@@ -15,6 +159,15 @@
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/elezioni-farnesina-il-voto-dallestero-e-sicuro_be4abaff-feba-4b70-a10c-580a438fa11c.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Gp Aragon, Bagnaia: \u0027Concentrato, senza pensare al mondiale\u0027",
+    "timestamp": "Wed Sep 14 16:21:35 CEST 2022",
+    "descrizione": "Pilota Ducati lo scorso anno lì vinse prima gara in MotoGP",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/moto/2022/09/14/gp-aragon-bagnaia-concentrato-senza-pensare-al-mondiale_4e00b4f7-bd12-4b3e-8478-4dc5f46e5169.html",
     "categoria": "random"
   },
   {
@@ -45,9 +198,9 @@
     "categoria": "random"
   },
   {
-    "titolo": "Petizione per un \u0027Elisabetta day\u0027, 110mila firme in poche ore",
-    "timestamp": "Wed Sep 14 13:55:52 CEST 2022",
-    "descrizione": "Alle 15 la processione verso la camera ardente. William e Harry insieme nel corteo",
+    "titolo": "Il feretro della regina Elisabetta giunto a Westminster Hall",
+    "timestamp": "Wed Sep 14 16:26:43 CEST 2022",
+    "descrizione": "Dove resterà esposto 4 giorni per l\u0027ultimo omaggio pubblico",
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/labbraccio-di-londra-alla-regina-feretro-a-buckingham-palace_9d750024-1451-4191-b3b9-28cde69e36c9.html",
@@ -63,8 +216,8 @@
     "categoria": "random"
   },
   {
-    "titolo": "I ladri gli svuotano la villa durante il match Bayern-Barca",
-    "timestamp": "Wed Sep 14 12:54:35 CEST 2022",
+    "titolo": "I ladri svuotano la villa durante il match Bayern-Barca",
+    "timestamp": "Wed Sep 14 15:21:34 CEST 2022",
     "descrizione": "Secondo Bild proprietario è l\u0027attaccante, bottino 500mila euro",
     "autore": "",
     "fonte": "ansa",
@@ -100,7 +253,7 @@
   },
   {
     "titolo": "Ultime notizie Irene Papas, morta l\u0027attrice greca che fu Penelope nell\u0027\u0027Odissea\u0027 ",
-    "timestamp": "Wed Sep 14 13:35:10 CEST 2022",
+    "timestamp": "Wed Sep 14 16:34:18 CEST 2022",
     "descrizione": "Recitò anche nello sceneggiato tv italiano \u0027L\u0027Odissea\u0027",
     "autore": "",
     "fonte": "ansa",
@@ -118,7 +271,7 @@
   },
   {
     "titolo": "Google: Tribunale Ue conferma condanna e multa da 4,1 mld",
-    "timestamp": "Wed Sep 14 10:20:24 CEST 2022",
+    "timestamp": "Wed Sep 14 14:16:09 CEST 2022",
     "descrizione": "Per abuso posizione dominante del suo motore di ricerca",
     "autore": "",
     "fonte": "ansa",
@@ -153,8 +306,8 @@
     "categoria": "random"
   },
   {
-    "titolo": "Ucraina, Zelensky a Izyum liberata. \u0027Avanti verso la vittoria\u0027",
-    "timestamp": "Wed Sep 14 13:47:41 CEST 2022",
+    "titolo": "Ucraina, Zelensky a Izyum liberata: \u0027Torture come a Bucha\u0027",
+    "timestamp": "Wed Sep 14 16:24:20 CEST 2022",
     "descrizione": "Nella città riconquistata il presidente issa la bandiera giallo-blu. Attacchi russi su tutta la linea del fronte a Donetsk. Massiccio bombardamento a Avdiivka. Gli Usa: \u0027Un certo numero di soldati russi\u0027 si sono ritirati da Kharkiv",
     "autore": "",
     "fonte": "ansa",
@@ -163,7 +316,7 @@
   },
   {
     "titolo": "Papa ai leader religiosi, mai giustificare la violenza",
-    "timestamp": "Wed Sep 14 08:32:42 CEST 2022",
+    "timestamp": "Wed Sep 14 16:30:21 CEST 2022",
     "descrizione": "Francesco in Kazakistan al Congresso delle religioni\u0026#160;",
     "autore": "",
     "fonte": "ansa",
@@ -244,7 +397,7 @@
   },
   {
     "titolo": "Fondi russi, Urso sente Gabrielli: \u0027Non c\u0027è l\u0027Italia nel rapporto degli 007 Usa\u0027",
-    "timestamp": "Wed Sep 14 10:17:34 CEST 2022",
+    "timestamp": "Wed Sep 14 15:30:56 CEST 2022",
     "descrizione": "Lo afferma il presidente del Copasir dopo aver avuto un confronto con l\u0027Autorità delegata alla sicurezza della Repubblica Franco Gabrielli",
     "autore": "",
     "fonte": "ansa",
@@ -450,166 +603,22 @@
     "categoria": "random"
   },
   {
-    "titolo": "Usa: oltre 1300 dipendenti Nyt non vogliono tornare in ufficio",
-    "timestamp": "Tue Sep 13 16:57:05 CEST 2022",
-    "descrizione": "Sindacati in rivolta, costi aumentati stipendi no",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/usa-oltre-1300-dipendenti-nyt-non-vogliono-tornare-in-ufficio_f21f788f-c7e0-4b85-ac2f-db088d77e73e.html",
-    "categoria": "random"
+    "titolo": "Il nuovo Pixelbook potrebbe non arrivare mai",
+    "timestamp": "Wed Sep 14 14:19:33 CEST 2022",
+    "descrizione": "Per gli amanti dei Pixelbook di Google, arrivano delle brutte notizie. Sembra che il colosso potrebbe non solo chiudere il progetto, ma potrebbe anche aver sciolto il team responsabile della sua realizzazione. (...)Continua a leggere Il nuovo Pixelbook potrebbe non arrivare mai su Androidiani.Com © alessandromatthiacelli for Androidiani.com, 2022. \u0026#124; Permalink \u0026#124; Tags del post: [\u0026#8230;]",
+    "autore": "Alessandro Matthia Celli",
+    "fonte": "androidiani",
+    "link": "https://www.androidiani.com/news/il-nuovo-pixelbook-potrebbe-non-arrivare-mai-381196",
+    "categoria": "tecnologia"
   },
   {
-    "titolo": "Ridotta in schiavitù dal fratello per 22 anni",
-    "timestamp": "Tue Sep 13 18:04:05 CEST 2022",
-    "descrizione": "Ora è finalmente libera",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cronaca/2022/09/13/ridotta-in-schiavitu-dal-fratello-per-22-anni_bcdea5fc-9618-4567-8b01-3c2b5f182cf4.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Gianni Amelio \u0027Godard non muore, lo considero vivo\u0027",
-    "timestamp": "Tue Sep 13 18:56:20 CEST 2022",
-    "descrizione": "Regista all\u0027ANSA, Fino all\u0027ultimo respiro mi ha cambiato la vita",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/13/gianni-amelio-godard-non-muore-lo-considero-vivo_f69ed962-225d-476b-bbc7-54c6efbb008c.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Amazon, in nuovo Kindle risoluzione display 3 volte maggiore",
-    "timestamp": "Tue Sep 13 16:32:39 CEST 2022",
-    "descrizione": "E\u0027 sostenibile, con etichetta \u0027Climate Pledge Friendly\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/13/amazon-in-nuovo-kindle-risoluzioen-display-3-volte-maggiore_87e76868-de97-4193-abd9-9d88f8817b2d.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Superbonus:Abi,passo avanti,ora serve intervento Ag. Entrate",
-    "timestamp": "Tue Sep 13 16:18:17 CEST 2022",
-    "descrizione": "Patuelli, emendamento positivo. Riavviare mercato",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/13/superbonusabipasso-avantiora-serve-intervento-ag.-entrate_3e5f7a9e-d133-4d65-9d9b-cd006ae42d61.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Borsa: Milano (-1%) peggiora, euro su parità con dollaro",
-    "timestamp": "Tue Sep 13 16:18:32 CEST 2022",
-    "descrizione": "Male tutti i mercati europei, euro avvicina parità con dollaro",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/13/borsa-milano-1-peggiora-euro-su-parita-con-dollaro_06ed302f-4fe0-4183-9423-f5f801f0ada6.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "X Factor , \u0027rifondazione\u0027 parte dalle radici del talent",
-    "timestamp": "Wed Sep 14 11:49:59 CEST 2022",
-    "descrizione": "Conduce Michielin e torna Fedez, con Ambra, Rkomi e D\u0027Amico",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/13/x-factor-rifondazione-parte-dalle-radici-del-talent_a20c2807-678b-4a13-a505-51bdf6107ab2.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Champions, Pioli avvisa: \u0027Sfida difficile serve gara top\u0027 ",
-    "timestamp": "Tue Sep 13 21:46:06 CEST 2022",
-    "descrizione": "Milan senza Origi e Rebic \u0027stiamo bene e daremo il massimo\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/13/champions-pioli-con-dinamo-importante-ma-non-decisiva_c411ecdf-ca1a-443b-9236-726cc3ccded7.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Sofia Coppola dirigerà Elvis and Me, da memoir Priscilla Presley",
-    "timestamp": "Tue Sep 13 19:07:20 CEST 2022",
-    "descrizione": "Riprese in autunno, anche Italia con Mieli tra produttori",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/13/sofia-coppola-dirigera-elvis-and-me-da-memoir-priscilla-presley_e96c613e-6d4e-4405-a0c5-a1d0ec53f0aa.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Godard e Cannes, quando nel \u002768 fermò il festival",
-    "timestamp": "Tue Sep 13 18:56:40 CEST 2022",
-    "descrizione": "E lo ricorda, senza di lui cinema non avrebbe lo stesso volto",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/13/godard-e-cannes-quando-nel-68-fermo-il-festival_c0505434-eaa9-402b-b956-47ee7fd24e3e.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Champions: Juve già al bivio, Allegri: \u0027Niente amnesie\u0027",
-    "timestamp": "Tue Sep 13 19:31:13 CEST 2022",
-    "descrizione": "Napoli, Lozano fuori contro Glasgow Rangers",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/13/champions-allegri-benfica-non-decisiva-ma-evitiamo-amnesie_c32ba615-8118-4692-ab10-743c7921b18c.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Twitter: Wsj, azionisti orientati ad approvare offerta Musk",
-    "timestamp": "Tue Sep 13 17:43:07 CEST 2022",
-    "descrizione": "Oggetto di una causa dopo che l\u0027imprenditore l\u0027ha ritrattata",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/tecnologia/tlc/2022/09/13/twitter-wsj-azionisti-orientati-ad-approvare-offerta-musk_dc56fef4-cdf0-45e7-a5ea-af1eeced2050.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Shalom.it, stereotipi antisemiti in libro Premio Campiello 2022",
-    "timestamp": "Tue Sep 13 19:41:10 CEST 2022",
-    "descrizione": "Lo scrittore all\u0027ANSA \"Io addolorato, se qualcuno si è offeso mi scuso\"",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/libri/2022/09/13/shalom.it-stereotipi-antisemiti-in-libro-premio-campiello-2022_f70b53e2-a419-4ffa-af0c-50db045c8da8.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Alberto Angela ricorda il padre , \"adesso è il momento di ripartire\"",
-    "timestamp": "Tue Sep 13 19:12:23 CEST 2022",
-    "descrizione": "ringrazia pubblico per affetto \"ho letto tutti vostri messaggi\"",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/13/alberto-angela-ricorda-padre-e-adesso-momento-ripartire_a42cb736-50e4-4ae5-a4bf-d75562746d3f.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Film italiano primo al box office dopo mesi, è Il signore delle formiche",
-    "timestamp": "Tue Sep 13 14:54:12 CEST 2022",
-    "descrizione": "Gianni Amelio e gli attori in tour in Italia ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/13/film-italiano-primo-al-box-office-dopo-mesi-e-amelio_8b1b5178-0493-4cc4-8119-ca724eed9dd0.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Champions, Ancelotti: \u0027Real Madrid vuole vincere di nuovo\u0027",
-    "timestamp": "Tue Sep 13 18:31:15 CEST 2022",
-    "descrizione": "Tecnico blancos: \u0027idee chiare per formazione contro Lipsia\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/13/champions-ancelotti-real-madrid-vuole-vincere-di-nuovo_a729840a-d7e5-4989-b3ae-f1e72dc3db99.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Moto: Marc Marquez ci riprova, torna in pista ad Aragon ",
-    "timestamp": "Tue Sep 13 18:30:41 CEST 2022",
-    "descrizione": "Spagnolo della Honda riparte dopo quattro operazioni a 110 giorni da ultima gara",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/moto/2022/09/13/moto-marquez-in-pista-ad-aragon-dopo-stop-di-oltre-3-mesi_b48e1dee-e057-48aa-84a3-c4ac18033365.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "E\u0027 morto Jean-Luc Godard. Libération: \u0027E\u0027 ricorso al suicidio assistito\u0027",
-    "timestamp": "Wed Sep 14 10:49:44 CEST 2022",
-    "descrizione": "Il celebre regista della Nouvelle Vague francese aveva 91 anni",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/13/e-morto-jean-luc-godard.-liberation-e-ricorso-al-suicidio-assistito_c590526a-f704-4ef5-95d3-598cef2074f3.html",
-    "categoria": "random"
+    "titolo": "PosteMobile: torna l\u0026#8217;offerta con minuti ed sms illimitati più 100 giga",
+    "timestamp": "Wed Sep 14 14:00:12 CEST 2022",
+    "descrizione": "PosteMobile Creami Extra WOW 100 è l\u0026#8217;interessante offerta che, nel mese di settembre, l\u0026#8217;operatore metterà al servizio dei consumatori.(...)Continua a leggere PosteMobile: torna l\u0026#8217;offerta con minuti ed sms illimitati più 100 giga su Androidiani.Com © nicopetilli for Androidiani.com, 2022. \u0026#124; Permalink \u0026#124; Tags del post: offerte, poste mobile",
+    "autore": "Nico Petilli",
+    "fonte": "androidiani",
+    "link": "https://www.androidiani.com/offerte-2/postemobile-offerta-100-giga-381077",
+    "categoria": "tecnologia"
   },
   {
     "titolo": "Google potrebbe vendere Pixel 7 e Pixel 7 Pro con soli due tagli di memoria",
@@ -729,24 +738,6 @@
     "categoria": "tecnologia"
   },
   {
-    "titolo": "Google potrebbe presentare una versione \u0026#8220;Pro\u0026#8221; del Pixel Tablet",
-    "timestamp": "Sat Sep 10 11:53:19 CEST 2022",
-    "descrizione": "Sebbene l\u0026#8217;aggiornamento Android 13 QPR1 Beta 1 recentemente rilasciato per i dispositivi Pixel non includa molte modifiche rivolte agli utenti, sono state rivelate alcune informazioni sui dispositivi Pixel non rilasciati. L\u0026#8217;aggiornamento non include solo menzioni di due dispositivi Pixel non annunciati, nomi in codice Felix e  Lynx, ma ci dà anche uno sguardo alle capacità di docking del Pixel Tablet. [\u0026#8230;]",
-    "autore": "Alessandro Matthia Celli",
-    "fonte": "androidiani",
-    "link": "https://www.androidiani.com/news/pixel-tablet-pro-381146",
-    "categoria": "tecnologia"
-  },
-  {
-    "titolo": "5 app che ti pagano per camminare",
-    "timestamp": "Fri Sep 09 18:17:08 CEST 2022",
-    "descrizione": "Camminare fa bene alla salute e questo lo sanno tutti, ma forse non tutti sanno che può far bene anche al portafoglio! Esistono, infatti, delle app che ti pagano per camminare e ora andiamo a vedere ben cinque di queste applicazioni. È giusto, però, ricordare che non dovremo di certo aspettarci di guadagnare uno stipendio [\u0026#8230;]",
-    "autore": "Andrea Morlacchi",
-    "fonte": "androidiani",
-    "link": "https://www.androidiani.com/news/5-app-che-ti-pagano-per-camminare-381097",
-    "categoria": "tecnologia"
-  },
-  {
     "titolo": "L’Ue metterà al bando i prodotti da lavoro forzato",
     "timestamp": "Wed Sep 14 13:33:29 CEST 2022",
     "descrizione": "La proposta consentirà sia di ritirare dal mercato i prodotti incriminati, sia di bloccarne l\u0027accesso sul mercato unico alla frontiera.",
@@ -774,7 +765,7 @@
     "categoria": "politica"
   },
   {
-    "titolo": "Ucraina ultime notizie. Cremlino, nuova bozza sicurezza Kiev è minaccia per Russia",
+    "titolo": "Ucraina ultime notizie. Zelensky, a Izyum torture come a Bucha",
     "timestamp": "Wed Sep 14 07:11:28 CEST 2022",
     "descrizione": "Kiev dichiara che i filorussi stanno facendo sfollare «le loro famiglie dalla Crimea» dopo la controffensiva, mentre il Pentagono evidenzia che un certo numero di soldati russi si ritira dall’oblast di Kharkiv. Negli ultimi giorni Mosca ha chiamato per negoziare, fa notare la vicepremier ucraina Stefanishyna. La Casa Bianca registra i progressi ma avverte: il conflitto sarà lungo. «Gli ucraini hanno fatto progressi significativi ma sarà un lungo cammino», commenta Biden.",
     "autore": "",
@@ -792,9 +783,9 @@
     "categoria": "politica"
   },
   {
-    "titolo": "Elisabetta II torna a Buckingham Palace per l’ultima volta",
+    "titolo": "Elisabetta II lascia Buckingham Palace, il feretro tra la folla",
     "timestamp": "Tue Sep 13 08:12:10 CEST 2022",
-    "descrizione": "Il feretro atterra alle porte di Londra dopo il volo da Edimburgo. Da mercoledì fino a domenica sarà esposto a Westminster Hall",
+    "descrizione": "Da mercoledì fino a domenica sarà esposto a Westminster Hall",
     "autore": "",
     "fonte": "ilsole24ore",
     "link": "https://www.ilsole24ore.com/art/in-scozia-camera-ardente-elisabetta-ii-stasera-feretro-londra-AERXitzB",
