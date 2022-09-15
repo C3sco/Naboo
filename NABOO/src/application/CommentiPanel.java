@@ -60,7 +60,7 @@ public class CommentiPanel {
 		JsonReader jr = new JsonReader(new FileReader("commenti.json"));
 		commentiJson = gson.fromJson(jr,Commento[].class);
 		for(int i=0; i<commentiJson.length;i++) {
-			if(!commentiJson[i].equals(tableCommenti.getSelectionModel().getSelectedItem())){
+			if(!commentiJson[i].getCommento().equals(tableCommenti.getSelectionModel().getSelectedItem().getCommento())){
 				lista.add(commentiJson[i]);
 			}
 		}

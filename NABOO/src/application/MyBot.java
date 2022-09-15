@@ -288,7 +288,7 @@ public class MyBot extends TelegramLongPollingBot {
 					}
 					sendMessage.setText( print);
 
-					notizia = 0;
+					notizia = 2;
 				}
 				break;
 
@@ -318,7 +318,7 @@ public class MyBot extends TelegramLongPollingBot {
 						e.getMessage();
 					}
 					sendMessage.setText( print);
-					notizia = 0;
+					notizia = 2;
 				}
 				break;
 
@@ -348,7 +348,7 @@ public class MyBot extends TelegramLongPollingBot {
 						e.getMessage();
 					}
 					sendMessage.setText( print);
-					notizia = 0;
+					notizia = 2;
 				}
 				break;
 			case "/voto":
