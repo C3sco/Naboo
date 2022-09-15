@@ -28,7 +28,9 @@ import com.sun.syndication.io.XmlReader;
 public class Main extends Application {
 	private static Stage pagina;
 	static Gson gson = new GsonBuilder().setPrettyPrinting().create();
-	ArrayList<Url> listaURL = new ArrayList<Url>();
+	ArrayList<Url> listaUrl = new ArrayList<Url>();
+	ArrayList<Admin> listaAdmin = new ArrayList<Admin>();
+	
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -43,23 +45,68 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
-			RSSReadAnsa();
+			RSSReader();
+			istanziaUrl();
+			istanziaAdmin();
 
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
+	//metodo per istanziare un utente admin
+	public void istanziaAdmin() throws Exception {
+		listaAdmin.clear();
+		Admin admin = new Admin("admin","admin");
+		Admin[] adminJson;
+		int presente = 0;
+		try {
+			JsonReader jr = new JsonReader(new FileReader("admin.json"));
+			adminJson = gson.fromJson(jr,Admin[].class);
+			for(int i=0; i<adminJson.length;i++) {
+				Admin ad = new Admin(adminJson[i].getUsername(),adminJson[i].getPassword());
+				listaAdmin.add(ad);
+				if(adminJson[i].getUsername().equals("admin")){
+					presente=1;
+				}
+			}
+			if(presente==0) {
+				listaAdmin.add(admin);
+			}
+		}catch(FileNotFoundException e) {
+			e.getMessage();
+		}
+		
+		Admin[] adminFinal = listaAdmin.toArray(new Admin[0]);
+		FileWriter fw = new FileWriter("admin.json");
+		gson.toJson(adminFinal,fw);
+		fw.flush();
+		fw.close();
+	}
 
-	//metodo per ricevere le notizie dai feed
-	public void RSSReadAnsa() throws Exception {
-		listaURL.clear();
+	//metodo per istanziare degli url di base
+	public void istanziaUrl() throws Exception {
+		listaUrl.clear();
+		Url random = new Url("https://www.ansa.it/sito/ansait_rss.xml","random","ansa");
+		Url tecnologia = new Url("http://feeds.feedburner.com/Androidiani","tecnologia","androidiani");
+		Url politica = new Url("https://www.ilsole24ore.com/rss/mondo.xml","politica","ilsole24ore");
+		Url scienze = new Url("https://www.ilsole24ore.com/rss/salute.xml","scienze","ilsole24ore");
+		listaUrl.add(random);
+		listaUrl.add(tecnologia);
+		listaUrl.add(politica);
+		listaUrl.add(scienze);
+		
+		Url[] urlFinal = listaUrl.toArray(new Url[0]);
+		FileWriter fw = new FileWriter("feedRSS.json");
+		gson.toJson(urlFinal,fw);
+		fw.flush();
+		fw.close();
+	}
+	
+	//metodo per caricare le notizie dai feed
+	public void RSSReader() throws Exception{
+		listaUrl.clear();
 		ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
-		URL urlRandom = new URL("https://www.ansa.it/sito/ansait_rss.xml"); //notizie random
-		URL urlTecnologia = new URL("http://feeds.feedburner.com/Androidiani"); //notizie sulla tecnologia
-		URL urlPolitica = new URL("https://www.ilsole24ore.com/rss/mondo.xml "); //notizie sulla politica
-		XmlReader readerRandom = new XmlReader(urlRandom);
-		XmlReader readerTecnologia = new XmlReader(urlTecnologia);
-		XmlReader readerPolitica = new XmlReader(urlPolitica);
 		Url[] urlJson;
 
 		try {
@@ -67,14 +114,14 @@ public class Main extends Application {
 			urlJson = gson.fromJson(jr,Url[].class);
 			for(int i=0; i<urlJson.length;i++) {
 				Url url = new Url(urlJson[i].getLink(),urlJson[i].getCategoria(),urlJson[i].getFonte());
-				listaURL.add(url);
+				listaUrl.add(url);
 			}
 		}catch(FileNotFoundException e) {
 			e.getMessage();
 
 		}
-		for(int i=0;i<listaURL.size();i++) {
-			URL urlLista = new URL(listaURL.get(i).getLink());
+		for(int i=0;i<listaUrl.size();i++) {
+			URL urlLista = new URL(listaUrl.get(i).getLink());
 			XmlReader reader = new XmlReader(urlLista);
 			try {
 				SyndFeedInput inp = new SyndFeedInput();
@@ -83,7 +130,7 @@ public class Main extends Application {
 				for(Object obj : feed.getEntries()) {
 					SyndEntry entry = (SyndEntry) obj;
 					Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
-							entry.getAuthor(),listaURL.get(i).getFonte(),entry.getLink(),listaURL.get(i).getCategoria());
+							entry.getAuthor(),listaUrl.get(i).getFonte(),entry.getLink(),listaUrl.get(i).getCategoria());
 					listaNotizie.add(notizia);
 				}
 			}finally {
@@ -98,59 +145,6 @@ public class Main extends Application {
 		gson.toJson(notizieFinal,fw);
 		fw.flush();
 		fw.close();
-		/*
-		//Salvo delle news recenti generali
-		try {
-			SyndFeedInput inp = new SyndFeedInput();
-			SyndFeed feed = inp.build(readerRandom);
-
-			for(Object obj : feed.getEntries()) {
-				SyndEntry entry = (SyndEntry) obj;
-				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
-						entry.getAuthor(),"ansa",entry.getLink(),entry.getCategories().toArray().toString());
-				listaNotizie.add(notizia);
-			}
-		}finally {
-			if(readerRandom!=null) {
-				readerRandom.close();
-			}
-		}
-
-		//Salvo le news sulla tecnologia
-		try {
-			SyndFeedInput inp = new SyndFeedInput();
-			SyndFeed feed = inp.build(readerTecnologia);
-
-			for(Object obj : feed.getEntries()) {
-				SyndEntry entry = (SyndEntry) obj;
-				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
-						entry.getAuthor(),"androidiani",entry.getLink(),entry.getCategories().toArray().toString());
-				listaNotizie.add(notizia);
-			}
-
-		}finally {
-			if(readerTecnologia!=null) {
-				readerTecnologia.close();
-			}
-		}
-
-		//Salvo le news sulla politica
-		try {
-			SyndFeedInput inp = new SyndFeedInput();
-			SyndFeed feed = inp.build(readerPolitica);
-
-			for(Object obj : feed.getEntries()) {
-				SyndEntry entry = (SyndEntry) obj;
-				Notizia notizia = new Notizia(entry.getTitle(),entry.getPublishedDate().toString(),entry.getDescription().getValue().toString(),
-						entry.getAuthor(),"sole24ore",entry.getLink(),entry.getCategories().toArray().toString());
-				listaNotizie.add(notizia);
-			}	
-		}finally {
-			if(readerRandom!=null) {
-				readerRandom.close();
-			}
-		}*/
-
 
 	}
 

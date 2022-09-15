@@ -15,23 +15,23 @@ public class Login {
 	@FXML private TextField pswAdmin;
 
 	public void loginAdmin() throws IOException{
-		String inputF = "admin.json";
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
 		String user = userAdmin.getText();
 		String psw = pswAdmin.getText();
-		Admin admin;
+		Admin[] adminJson;
 
 		Main pagina = new Main();
 
 		try {
-			JsonReader read = new JsonReader(new FileReader(inputF));
-			admin = gson.fromJson(read, Admin.class);
-			if(admin.getUsername().equals(user) && 
-					admin.getPassword().equals(psw)) {
-				pagina.cambiaPagina("AdminPanel.fxml");
+			JsonReader jr = new JsonReader(new FileReader("admin.json"));
+			adminJson = gson.fromJson(jr, Admin[].class);
+			for(int i=0;i<adminJson.length;i++) {
+				if(adminJson[i].getUsername().equals(user) && 
+						adminJson[i].getPassword().equals(psw)) {
+					pagina.cambiaPagina("AdminPanel.fxml");
+				}
 			}
-
 		}catch(FileNotFoundException e) {
 			e.getMessage();
 		}

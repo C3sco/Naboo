@@ -30,7 +30,7 @@ public class AdminPanel {
 	}
 	public void newsCollector() throws Exception {
 		Main m = new Main();
-		m.RSSReadAnsa();
+		m.RSSReader();
 	}
 	public void gestisciFeed() throws Exception{
 		Main pagina = new Main();

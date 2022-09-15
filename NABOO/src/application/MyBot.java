@@ -16,9 +16,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 public class MyBot extends TelegramLongPollingBot {
 
 	Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -34,7 +31,7 @@ public class MyBot extends TelegramLongPollingBot {
 	int notizia = 0;
 	int voto = 0;
 	int commento = 0;
-	Notizia currentNotizia = new Notizia("a","a","a","a","a","a","a");
+	Notizia currentNotizia;
 
 	@Override
 	public String getBotUsername() {
@@ -46,8 +43,6 @@ public class MyBot extends TelegramLongPollingBot {
 		return "5535947581:AAGnbDVP6w83v_8lUHg2LIrOYgyuf6L8ReY";
 	}
 
-
-
 	@Override
 	public void onUpdateReceived(Update update) {
 		Utente[] utentiJson = null;
@@ -57,8 +52,6 @@ public class MyBot extends TelegramLongPollingBot {
 			String chatId = update.getMessage().getChatId().toString();
 			String message = update.getMessage().getText();
 			String username = update.getMessage().getChat().getUserName();
-			String risposta = null;
-			String[] split = message.split(" ");
 			String nome = update.getMessage().getChat().getFirstName();
 			String cognome = update.getMessage().getChat().getLastName();
 
@@ -68,7 +61,6 @@ public class MyBot extends TelegramLongPollingBot {
 			case 1:
 				String password = message;
 				Utente utente = new Utente(nome,cognome,username,password);
-				register=0;
 
 				try {
 					JsonReader jr = new JsonReader(new FileReader("users.json"));
@@ -93,6 +85,7 @@ public class MyBot extends TelegramLongPollingBot {
 					fw.flush();
 					fw.close();
 					sendMessage.setText("Utente registrato con successo!" + nome + " " + cognome + " " + username);
+					register=2;
 				} catch (IOException e ) {
 					e.printStackTrace();
 				}
@@ -112,7 +105,8 @@ public class MyBot extends TelegramLongPollingBot {
 						votiJson = gson.fromJson(jr,Voto[].class);
 						for(int i=0;i<votiJson.length;i++) {
 							listaVoti.add(votiJson[i]);
-							if(votiJson[i].getUsernameUtente().equals(username) & votiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { //controllo che non ci sia già un voto dell'utente nella notizia
+							//controllo che non ci sia già un voto dell'utente nella notizia
+							if(votiJson[i].getUsernameUtente().equals(username) & votiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { 
 								duplicate = 1;
 								sendMessage.setText("Voto già inserito!");
 							}
@@ -130,6 +124,8 @@ public class MyBot extends TelegramLongPollingBot {
 						e.getMessage();
 					}
 
+				}else {
+					sendMessage.setText("Voto inserito non valido, riutilizza il comando /voto e inserisci un numero da 1 a 10");
 				}
 			}
 
@@ -142,8 +138,30 @@ public class MyBot extends TelegramLongPollingBot {
 
 
 			switch(login) {
-			case 1:
-				sendMessage.setText("Utente registrato con successo!");
+			case 2:
+				listaUsers.clear();
+				try {
+					JsonReader jr = new JsonReader(new FileReader("users.json"));
+					utentiJson = gson.fromJson(jr,Utente[].class);
+					for(int i=0; i<utentiJson.length;i++) {
+						Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername(),utentiJson[i].getPassword());
+						listaUsers.add(user);
+					}
+
+				}catch(FileNotFoundException e) {
+					e.getMessage();
+				}
+				for(int i=0;i<listaUsers.size();i++) {
+					if(listaUsers.get(i).getPassword().equals(message) && listaUsers.get(i).getUsername().equals(username)) {
+						login=1;
+						sendMessage.setText("Login effettuato con successo! Digita /comandi per ricevere la lista dei comandi disponibili");
+					}
+				}
+				if(login!=1) {
+					sendMessage.setText("Utente non presente nel database!");
+					login=0;
+				}
+
 				break;
 			}
 
@@ -159,7 +177,8 @@ public class MyBot extends TelegramLongPollingBot {
 					commentiJson = gson.fromJson(jr,Commento[].class);
 					for(int i=0;i<commentiJson.length;i++) {
 						listaCommenti.add(commentiJson[i]);
-						if(commentiJson[i].getUsernameUtente().equals(username) & commentiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { //controllo che non ci sia già un commento dell'utente nella notizia
+						//controllo che non ci sia già un commento dell'utente nella notizia
+						if(commentiJson[i].getUsernameUtente().equals(username) & commentiJson[i].getLinkNotizia().equals(currentNotizia.getLink())) { 
 							duplicate = 1;
 							sendMessage.setText("Commento già inserito!");
 						}
@@ -184,11 +203,24 @@ public class MyBot extends TelegramLongPollingBot {
 			switch(message) {
 
 
-			case "/registrazione" :
+			case "/registrazione":
 				register = 1;
 				sendMessage.setText("Per registrarti inserisci la tua password senza usare spazi. Ricorda che il tuo nome, cognome e username saranno quelli"
 						+ " utilizzati su telegram!");
+				break;
 
+			case "/login":
+				login = 2;
+				sendMessage.setText("Inserisci la password per effettuare il login a Naboo");
+				break;
+
+			case "/comandi":
+				sendMessage.setText("/registrazione - permette di creare un nuovo utente con i tuoi dati telegram \n"
+						+ "/login - permette di effettuare l'accesso a Naboo \n"
+						+ "/notizia - permette di ricevere una notizia su un argomento da te scelto"
+						+ "/commento - permette di commentare una notizia \n"
+						+ "/voto - permette di dare un voto ad una notizia \n"
+						+ "/logout - permette di effettuare il logout da Naboo");
 				break;
 
 
@@ -221,10 +253,10 @@ public class MyBot extends TelegramLongPollingBot {
 					}catch(FileNotFoundException e) {
 						e.getMessage();
 					}
-					System.out.println(print);
+					notizia = 2;
 					sendMessage.setText( print);
 
-					notizia = 0;
+
 				}
 				break;
 
@@ -254,7 +286,6 @@ public class MyBot extends TelegramLongPollingBot {
 					}catch(FileNotFoundException e) {
 						e.getMessage();
 					}
-					System.out.println(print);
 					sendMessage.setText( print);
 
 					notizia = 0;
@@ -283,11 +314,9 @@ public class MyBot extends TelegramLongPollingBot {
 						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
 						print += currentNotizia.toString();
 
-
 					}catch(FileNotFoundException e) {
 						e.getMessage();
 					}
-					System.out.println(print);
 					sendMessage.setText( print);
 					notizia = 0;
 				}
@@ -295,37 +324,65 @@ public class MyBot extends TelegramLongPollingBot {
 
 			case "scienza":	
 				if(notizia == 1) {
-					sendMessage.setText("  politica");
+					Random random = new Random();
+					ArrayList<Notizia> listaNotizie = new ArrayList<Notizia>();
+					Notizia[] notizieJson;
+					Gson gson = new GsonBuilder().setPrettyPrinting().create();
+					String print = "";
+					try {
+						JsonReader jr = new JsonReader(new FileReader("notizie.json"));
+						notizieJson = gson.fromJson(jr,Notizia[].class);
+
+						for(int i=0; i<notizieJson.length;i++) {																			
+							Notizia news = new Notizia(
+									notizieJson[i].getTitolo(),notizieJson[i].getTimestamp(),notizieJson[i].getDescrizione(),
+									notizieJson[i].getAutore(),notizieJson[i].getFonte(),notizieJson[i].getLink(),notizieJson[i].getCategoria());
+							if(notizieJson[i].getCategoria().equals("politica")) {
+								listaNotizie.add(news);							
+							}
+						}
+						currentNotizia = listaNotizie.get(random.nextInt(listaNotizie.size()));
+						print += currentNotizia.toString();
+
+					}catch(FileNotFoundException e) {
+						e.getMessage();
+					}
+					sendMessage.setText( print);
 					notizia = 0;
 				}
 				break;
-
-
-
 			case "/voto":
-				voto = 1;
-				sendMessage.setText("Inserisci un voto da 1 a 10 per la notizia");
+				if(login==1 && notizia==2) {
+					voto = 1;
+					sendMessage.setText("Inserisci un voto da 1 a 10 per la notizia");
+				}else if(login==0){
+					sendMessage.setText("Devi effettuare il login per poter votare una notizia");
+				}else {
+					sendMessage.setText("Notizia non trovata, richiedine una con il comando /notizia");
+				}
 
 				break;
 
 			case "/commento":
-				commento = 1;
-				sendMessage.setText("Inserisci un commento per l'ultima notizia visualizzata");
-
-
+				if(login==1 & notizia==2) {
+					commento = 1;
+					sendMessage.setText("Inserisci un commento per l'ultima notizia visualizzata");
+				} else if(login==0){
+					sendMessage.setText("Devi effettuatre il login per poter commentare una notizia");
+				} else {
+					sendMessage.setText("Notizia non trovata, richiedine una con il comando /notizia");
+				}
 				break;
 
 			case "/logout" :
 				if(login==1) {
-					sendMessage.setText("Logout effettuato!");
 					login = 0;
+					sendMessage.setText("Logout effettuato!");
 				}else {
 					sendMessage.setText("Non hai effettuato l'accesso a Naboo!");
 				}
 				break;
-
 			}
-
 			sendMessage.setChatId(chatId);
 
 			try {
@@ -333,74 +390,6 @@ public class MyBot extends TelegramLongPollingBot {
 			}catch(TelegramApiException e){
 
 			}
-
-			/*
-			if(message.equalsIgnoreCase("/registrazione")) {
-				sendMessage.setText("Per registrarti inserisci il tuo nome e cognome separati da uno spazio. "
-						+ "Esempio:  Marco Rossi ");
-				sendMessage.setChatId(chatId);
-				register = 1;	
-
-			try {
-				execute(sendMessage);
-			}catch(TelegramApiException e){
-
-			}
-			/*
-			 * else if(register==1) {
-
-				String nome = split[0];
-				String cognome = split[1];
-				Utente utente = new Utente(nome,cognome,username);
-				register=0;
-				for(int i=0; i<utentiJson.length;i++) {
-	 	    		Utente user = new Utente(utentiJson[i].getNome(),utentiJson[i].getCognome(),utentiJson[i].getUsername());
-	 	    		listaUsers.add(user);
-				}
-				listaUsers.add(utente);
-
-				try {
-					JsonReader jr = new JsonReader(new FileReader("users.json"));
-					utentiJson = gson.fromJson(jr,Utente[].class);
-
-				}catch(FileNotFoundException e) {
-		 	    	e.getMessage();
-		 	    }
-				Utente[] userFinal = listaUsers.toArray(new Utente[0]);
-
-		    	FileWriter fw;
-				try {
-					fw = new FileWriter("users.json");
-					gson.toJson(userFinal,fw);
-					fw.flush();
-					fw.close();
-					sendMessage.setText("Utente registrato con successo!");
-					execute(sendMessage);
-				} catch (IOException | TelegramApiException e ) {
-					e.printStackTrace();
-				}
-			}
-
-
-/*
-			switch(message) {
-
-			case "/registrazione" :
-				sendMessage.setText("Per registrarti inserisci il tuo nome e cognome separati da uno spazio. "
-						+ "Esempio:  Marco Rossi ");
-				register = 1;
-
-				try {
-					execute(sendMessage);
-				}catch(TelegramApiException e){
-
-				}
-				break;
-			}*/
-
-
 		}
-
-
 	}
 }

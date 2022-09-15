@@ -1,5 +1,518 @@
 [
   {
+    "titolo": "Svolta green di Ethereum, riduce consumo del 99,95%",
+    "timestamp": "Thu Sep 15 11:52:21 CEST 2022",
+    "descrizione": "Con aggiornamento The Merge. Esperti PoliMi, \"cambio epocale\"",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/15/mite-hackeraggio-in-occasione-di-svolta-green-di-ethereum_66116a09-2a9f-47b1-8151-e0609f1ddfae.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Nuove regole Ue sulla cibersicurezza dei prodotti",
+    "timestamp": "Thu Sep 15 11:52:23 CEST 2022",
+    "descrizione": "Obblighi per produttori su supporto, aggiornamenti software",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/15/nuove-regole-ue-sulla-cibersicurezza-dei-prodotti_7aea31b2-2659-48cb-945b-d77be74994be.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Borsa: Europa cauta aspetta Wall street, Milano piatta",
+    "timestamp": "Thu Sep 15 11:41:09 CEST 2022",
+    "descrizione": "Euro fiacco, petrolio fatica a tenere quota 88 dollari al barile",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/15/borsa-europa-cauta-aspetta-wall-street-milano-piatta_5abd6cc7-3cbe-480c-bf99-b395819e572b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Mite: hackerato profilo Twitter,in foto fondatore Ethereum ",
+    "timestamp": "Thu Sep 15 11:43:13 CEST 2022",
+    "descrizione": "",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/15/mite-hackerato-profilo-twitterin-foto-fondatore-ethereum-2_2c67c223-f459-48df-a1d3-5c1fab2693d6.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Weekend al cinema, il Maigret di Leconte e Crialese",
+    "timestamp": "Thu Sep 15 10:56:37 CEST 2022",
+    "descrizione": "Film da Venezia e non solo",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/unfilmalgiorno/2022/09/15/weekend-al-cinema-il-maigret-di-leconte-e-crialese_80e6c008-aa70-4ba0-aa9f-17b62c5dfefc.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Mite: hackerato profilo Twitter, in foto fondatore Ethereum",
+    "timestamp": "Thu Sep 15 12:02:59 CEST 2022",
+    "descrizione": "In queste ore piattaforma blockchain è diventata più green con aggiornamento The Merge",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/15/mite-hackerato-profilo-twitter-in-foto-fondatore-ethereum-_a7463541-4ffa-4856-8b8b-1d4ae0a3f063.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Hackerato il profilo Twitter del ministero della Transizione ecologica",
+    "timestamp": "Thu Sep 15 12:13:08 CEST 2022",
+    "descrizione": "Al posto della foto ufficiale appariva un\u0027immagine del fondatore di Ethereum, Vitalik Buterin",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/15/hackerato-il-profilo-twitter-del-ministero-della-transizione-ecologica_ab31e57a-764e-4042-b253-a951ca760f5a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Pil: Confcommercio, rischio recessione \u0027mite\u0027 a fine anno",
+    "timestamp": "Thu Sep 15 11:24:54 CEST 2022",
+    "descrizione": "Pesa il caro-energia. Sangalli, subito interventi strutturali",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/15/pil-confcommercio-rischio-recessione-mite-a-fine-anno_fcd0932a-1a43-4882-aa29-2abaed4e96e8.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Messenger, arrivano chat per discutere di argomenti comuni",
+    "timestamp": "Thu Sep 15 10:36:46 CEST 2022",
+    "descrizione": "Community chat, categorie e canali audio e video",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/internet_social/2022/09/15/messenger-arrivano-chat-per-discutere-di-argomenti-comuni_cfb9333b-f9fe-445e-b3a6-2a9ec93047d6.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Pil: Confcommercio, rischio recessione \u0027mite\u0027 a fine anno ",
+    "timestamp": "Thu Sep 15 10:19:36 CEST 2022",
+    "descrizione": "E di crescita zero nel 2023. Pesa il caro-energia",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/pmi/2022/09/15/-pil-confcommercio-rischio-recessione-mite-a-fine-anno-_a8302748-e47f-49bb-8911-7c2d9df0adfe.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Camera: in Aula arrivano nuovi tabelloni digitali per il voto",
+    "timestamp": "Thu Sep 15 11:56:11 CEST 2022",
+    "descrizione": "Trasmetteranno anche l\u0027immagine dei deputati durante gli interventi",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/15/camera-in-aula-arrivano-nuovi-tabelloni-digitali-per-il-voto_64dd6df8-f016-44c2-8a7f-672af04438e1.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Dl aiuti bis: Camera, al via l\u0027esame, nel pomeriggio l\u0027ok",
+    "timestamp": "Thu Sep 15 12:03:32 CEST 2022",
+    "descrizione": "E\u0027 in corso a Montecitorio la discussione generale, che sarà seguita dalle votazioni sugli articoli dalle 14.30",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/15/dl-aiuti-bis-camera-al-via-lesame-nel-pomeriggio-lok_94140d53-d7b6-4271-a76b-d5b40ef14a59.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "La California fa causa ad Amazon, prezzi artificialmente alti",
+    "timestamp": "Thu Sep 15 09:45:11 CEST 2022",
+    "descrizione": "Viola le norme antitrust dello stato e soffoca la concorrenza",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/15/california-fa-causa-ad-amazon-prezzi-artificialmente-alti_88ef7cfd-45a0-4b01-8e0b-80c41ee75fd6.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "2016: L\u0027anno della trap, storia di una svolta su Discovery+",
+    "timestamp": "Thu Sep 15 09:28:13 CEST 2022",
+    "descrizione": "Voice over di Jack La Furia, parlano da Fabri Fibra a Rkomi",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/musica/2022/09/15/2016-lanno-della-trap-storia-di-una-svolta-su-discovery_a29af145-5eb8-4366-b9fd-62ff89c76b43.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "L\u0027Internet globale di Starlink ora copre anche l\u0027Antartide",
+    "timestamp": "Thu Sep 15 09:49:22 CEST 2022",
+    "descrizione": "Intanto la costellazione perde 2 satelliti, ritorno il 14 e 15 settembre",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/tlc/2022/09/15/linternet-globale-di-starlink-ora-copre-anche-lantartide_8816557b-fa14-4fb8-b0ec-ea1d54a4adf8.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Borsa: Europa parte in leggera crescita, Londra +0,4%",
+    "timestamp": "Thu Sep 15 10:15:28 CEST 2022",
+    "descrizione": "Positive Francoforte e Amsterdam, piatte Parigi e Mosca. Male la Cina",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/15/borsa-europa-parte-in-leggera-crescita-londra-04_52007e11-2124-474c-8492-5521ce8cf25b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Patagonia: famiglia la cede a no-profit, \u0027salvare pianeta\u0027",
+    "timestamp": "Thu Sep 15 11:25:30 CEST 2022",
+    "descrizione": "Chouinard, \u0027profitti per combattere il cambiamento climatico\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/15/patagonia-famiglia-la-cede-a-no-profit-salvare-pianeta_da0b580a-6b5d-4c62-8fe7-7e60dd439c68.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "I ragazzi che amano il cinema di Lia Levi",
+    "timestamp": "Thu Sep 15 08:50:03 CEST 2022",
+    "descrizione": "In libreria per Salani romanzo sul potere salvifico delle storie",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/unlibroalgiorno/2022/09/15/i-ragazzi-che-amano-il-cinema-di-lia-levi_9f8e2845-de58-4412-b975-472618507d62.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ucraina, missili colpiscono diga della città di Zelensky, residenti evacuati. Putin incontra Xi ",
+    "timestamp": "Thu Sep 15 12:01:32 CEST 2022",
+    "descrizione": "Mosca avverte: \"Usa in guerra se danno missili a lungo raggio a Kiev\"",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/15/ucraina-missili-colpiscono-diga-della-citta-di-zelensky-residenti-evacuati.-putin-incontra-xi-_4594ae07-2ff0-4634-886d-d870d23a6ceb.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ucriana: \u0027I russi si ritirano dalla regione di Zaporizhzhia\u0027",
+    "timestamp": "Thu Sep 15 11:37:39 CEST 2022",
+    "descrizione": "Preparano la difesa sulla linea del fronte nel Lugansk. Da Bei i primi 500 milioni a Kiev",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/15/missili-colpiscono-diga-citta-zelensky-residenti-evacuati-_6a48f17a-56aa-4c68-bb94-b5cf5da9c3fa.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Papa in Kazakhistan, nessuno è straniero nella Chiesa",
+    "timestamp": "Thu Sep 15 08:50:31 CEST 2022",
+    "descrizione": "Si conclude oggi la vista di Francesco nel Paese asiatico",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/15/papa-in-kazakhistan-nessuno-e-straniero-nella-chiesa_4b14e649-47ea-4d37-aa48-524fa5f41e43.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ucraina: incidente d\u0027auto per Zelensky, \u0027non ferito gravemente\u0027",
+    "timestamp": "Thu Sep 15 10:56:06 CEST 2022",
+    "descrizione": "Scontro a Kiev con auto privata, poi il consueto videodiscorso",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/15/ucraina-incidente-dauto-per-zelensky-non-ferito-gravemente_f0b78506-d3c2-41e4-92f1-93cd21af1d2d.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Europa League, Midtjylland-Lazio. Sarri: \u0027Partita non semplice\u0027",
+    "timestamp": "Thu Sep 15 00:36:41 CEST 2022",
+    "descrizione": "Tecnico biancoceleste: \u0027Sono una buona squadra\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/15/europa-league-midtjylland-lazio.-sarri-partita-non-semplice_8fd0fe25-9bf8-4fe7-abac-b45b5fb75037.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Mondiali di ritmica: Italia doppio oro, storica Raffaeli",
+    "timestamp": "Wed Sep 14 23:15:39 CEST 2022",
+    "descrizione": "Bronzo di Baldassarri completa la festa, l\u0027iridata: \u0027Dedicato al nonno\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/altrisport/2022/09/14/mondiali-di-ritmica-italia-doppio-oro-storica-raffaeli_5e123927-57f8-457e-b867-a6b0353e5222.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Champions: Juventus-Benfica 1-2 e Rangers-Napoli 0-3 - TUTTI I RISULTATI ",
+    "timestamp": "Thu Sep 15 11:08:09 CEST 2022",
+    "descrizione": "Rigore di Politano e gol di Raspadori e Ndombelè. Bianconeri avanti con Milik, Joao Mario su rigore e gol di Neres",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/champions-juventus-benfica-1-2-e-rangers-napoli-0-3-tutti-i-risultati-_c32ba615-8118-4692-ab10-743c7921b18c.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Mosca, Usa in guerra se danno missili a lungo raggio a Kiev",
+    "timestamp": "Wed Sep 14 22:46:00 CEST 2022",
+    "descrizione": "Zelensky a Izyum: \u0027Avanti verso la vittoria e la Crimea\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/mosca-usa-in-guerra-se-danno-missili-a-lungo-raggio-a-kiev_969a29d1-1829-4458-9e41-b295a18f9272.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Lacrime e Union Jack,30 ore in fila per Lilibet",
+    "timestamp": "Wed Sep 14 20:56:12 CEST 2022",
+    "descrizione": "I ricordi scorrono accanto al Tamigi: \u0027C\u0027è stata sempre per noi\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/lacrime-e-union-jack30-ore-in-fila-per-lilibet_ad72f039-c182-4d40-93db-1431cf99fa40.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Caso Pogba, fermato il fratello e altre persone ",
+    "timestamp": "Wed Sep 14 20:13:58 CEST 2022",
+    "descrizione": "Acccelera inchiesta su estorsione denunciata da calciatore Juve ",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/2022/09/14/caso-pogba-fermato-il-fratello-e-altre-persone-_6b68bb07-0937-4919-a667-0c404b402f50.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Benigni e il Cantico di Francesco,  la lettura show per Paramount+",
+    "timestamp": "Wed Sep 14 20:31:17 CEST 2022",
+    "descrizione": "Verdone, la nuova stagione di Vita da Carlo passa sulla piattaforma al via in Italia",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/benigni-verdone-chastain-stallone-per-paramount_f7c18ebf-00df-4473-9727-bd6ceb82490b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Vince la destra in Svezia, la premier Andersson si dimette",
+    "timestamp": "Wed Sep 14 21:12:04 CEST 2022",
+    "descrizione": "La leader dei Socialdemocratici riconosce la sconfitta",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/vince-la-destra-in-svezia-la-premier-andersson-si-dimette_3d58e9d3-0762-4e43-b191-fdbc33d0d854.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Marracash, sono King del Rap e mi riprendo il \u0027regno\u0027",
+    "timestamp": "Thu Sep 15 09:31:56 CEST 2022",
+    "descrizione": "A Milano per \u0027Persone Tour\u0027 Elisa, Massimo Pericolo e Pequeno",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/14/ansa/-marracash-sono-king-del-rap-e-mi-riprendo-il-regno_9cf378a0-59ef-4f04-9f6c-588fbea2a9d1.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Champions: Milan vince a San Siro dopo 9 anni, Dinamo ko ",
+    "timestamp": "Thu Sep 15 09:38:57 CEST 2022",
+    "descrizione": " Primato nel girone per rossoneri,gol Giroud, Saelemaekers Pobega ",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/in-campo-milan-dinamo-zagabria-0-0-live_c411ecdf-ca1a-443b-9236-726cc3ccded7.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Torna il tetto agli stipendi nella Pa, ok in commissione",
+    "timestamp": "Thu Sep 15 11:44:46 CEST 2022",
+    "descrizione": "Approvato emendamento alla Camera che cancella la norma introdotta nel dl aiuti bis dal Senato",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/torna-il-tetto-agli-stipendi-nella-pa-ok-in-commissione_ad40b666-9408-4020-b379-59ef8ee6698a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "\"Shantaram\", la serie basata sull\u0027omonimo best-seller",
+    "timestamp": "Wed Sep 14 19:53:35 CEST 2022",
+    "descrizione": "Con Charlie Hunnam su Apple Tv+ da 14 ottobre",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/shantaram-la-serie-basata-sullomonimo-best-seller_bf67555a-4223-477f-aa50-390324a1f338.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Cnn, Biden punta su prima donna come ambasciatrice a Mosca",
+    "timestamp": "Wed Sep 14 18:34:37 CEST 2022",
+    "descrizione": "Lynne Tracy ora guida la missione Usa in Armenia",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/cnn-biden-punta-su-prima-donna-come-ambasciatrice-a-mosca_1d5c6444-fe87-4d2a-8c7e-5a9ac4d267d7.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ucraina: Guterres, siamo ancora lontani dalla pace",
+    "timestamp": "Wed Sep 14 18:34:38 CEST 2022",
+    "descrizione": "\u0027Mentirei se dicessi che può accadere a breve\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/ucraina-guterres-siamo-ancora-lontani-dalla-pace_328c41f6-0a41-4cab-bb8d-453e37b092d2.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Papas: presidente greca, è stata interprete unica",
+    "timestamp": "Wed Sep 14 18:34:39 CEST 2022",
+    "descrizione": "Sakellaropoulou, Papas ha incarnato bellezza greca",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/papas-presidente-greca-e-stata-interprete-unica_eec51092-95f1-4b6d-bc79-58f9274ece6c.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Lapid, Israele agirà dove Anp non fa rispettare legge",
+    "timestamp": "Wed Sep 14 18:34:41 CEST 2022",
+    "descrizione": "Premier su uccisione soldato da parte miliziani palestinesi",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2022/09/14/lapid-israele-agira-dove-anp-non-fa-rispettare-legge_ff53edd3-097d-4dd7-977e-6a879aceda17.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Kiev, camera torture a Balakliya, il Padre Nostro sul muro",
+    "timestamp": "Wed Sep 14 18:34:42 CEST 2022",
+    "descrizione": "Lo afferma la Difesa ucraina pubblicando l\u0027immagine della stanza",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/kiev-camera-torture-a-balakliya-il-padre-nostro-sul-muro_9692392d-26f8-4050-99eb-209a3c77d548.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Von der Leyen, fiduciosa che qualsiasi governo attui il Pnrr",
+    "timestamp": "Wed Sep 14 18:34:44 CEST 2022",
+    "descrizione": "Presidente Commissione a Tg3,\u0027Italia ha ottimo Piano di ripresa\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/von-der-leyen-fiduciosa-che-qualsiasi-governo-attui-il-pnrr_161cfe30-f0e7-453f-9dba-edc8b07cebac.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Lacrime e Union Jack, i primi sudditi a Westminster Hall",
+    "timestamp": "Wed Sep 14 18:35:59 CEST 2022",
+    "descrizione": "Altri si fanno il segno della croce",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/lacrime-e-union-jack-i-primi-sudditi-a-westminster-hall_e959788a-2461-4757-8143-60d9ee17ceeb.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Scholz, Putin ancora convinto che guerra non sia stata un errore",
+    "timestamp": "Wed Sep 14 18:34:47 CEST 2022",
+    "descrizione": "\u0027E non ha accennato al fatto che avrà un nuovo atteggiamento\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/scholz-putin-ancora-convinto-che-guerra-non-sia-stata-un-errore_2a3211a7-1adf-4e8b-8748-ab276863002d.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Guterres, parlato con Putin di Zaporizhzhia e grano",
+    "timestamp": "Wed Sep 14 18:34:51 CEST 2022",
+    "descrizione": "\u0027Le mie posizioni sono conosciute\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/guterres-parlato-con-putin-di-zaporizhzhia-e-grano_facf0257-1e94-4f8b-ac14-1fe35de52cba.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Erdogan, inaccettabili violazioni da parte dell\u0027Armenia",
+    "timestamp": "Wed Sep 14 18:34:53 CEST 2022",
+    "descrizione": "Leader turco, saremo sempre dalla parte dell\u0027Azerbaigian",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/14/erdogan-inaccettabili-violazioni-da-parte-dellarmenia_e5335088-9ee2-4175-a8bf-f22ed4012617.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Fondi russi, Urso: \u0027Non c\u0027è l\u0027Italia per ora\u0027. Di Maio: \u0027I dossier potrebbero essere più di uno\u0027",
+    "timestamp": "Wed Sep 14 21:42:08 CEST 2022",
+    "descrizione": "Venerdì Gabrielli al Copasir",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/fondi-russi-urso-non-ce-litalia-per-ora.-di-maio-i-dossier-potrebbero-essere-piu-di-uno_063f341c-ecc9-4ee5-8bc1-43c9653dafce.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "All\u0027Aquila la prima comandante degli Alpini, guiderà un battaglione",
+    "timestamp": "Wed Sep 14 20:24:22 CEST 2022",
+    "descrizione": "Tenente colonnello Monica Segat: da miei pretendo massimo impegno",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cronaca/2022/09/14/a-laquila-la-prima-comandante-degli-alpini-guidera-battaglione_6aa2a0cd-755c-49f5-8a68-c11e1ac5400c.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Gigafactory pannelli Enel, \u0027obiettivo emanciparsi dalla Cina\u0027",
+    "timestamp": "Wed Sep 14 17:49:17 CEST 2022",
+    "descrizione": "3Sun esempio per Von der Leyen. Ceo, risparmio 1,2 mln m3 di gas",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/gigafactory-pannelli-enel-obiettivo-emanciparsi-dalla-cina_4c21c38c-8d88-4402-a539-fd8c71a269fb.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Crolla ancora audience Emmy, giù del 25% rispetto al 2021",
+    "timestamp": "Wed Sep 14 19:42:33 CEST 2022",
+    "descrizione": "Toccato il livello più basso con 5,9 milioni di spettatori",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/crolla-ancora-audience-emmy-giu-del-25-rispetto-al-2021_9b959a0c-aaaf-4de8-8274-14398225a129.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Un mondo sotto social, la comicità secondo i Soldi Spicci",
+    "timestamp": "Wed Sep 14 19:53:55 CEST 2022",
+    "descrizione": "Film con e di Vitrano e Casisa, in sala in 290 copie",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/14/un-mondo-sotto-socialla-comicita-secondo-i-soldi-spicci_57e2e09d-27ba-4752-998d-f0b5df4658d7.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Dopo la morte di Elisabetta II audience al top per \u0027The Crown\u0027",
+    "timestamp": "Wed Sep 14 19:46:43 CEST 2022",
+    "descrizione": "Prima stagione serie ai primi posti in classifica Netflix",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/dopo-la-morte-di-elisabetta-ii-audience-al-top-per-the-crown_b66001e2-1a90-4b91-87ab-f03b9808a72b.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Libri, \u0027Contocorrente. Bella vita e opere di Matteo Renzi\u0027",
+    "timestamp": "Wed Sep 14 19:06:21 CEST 2022",
+    "descrizione": "Autrice la giornalista Rita Bonaga. Colombo, \u0027cocktail riuscito\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/2022/09/14/libri-contocorrente.-bella-vita-e-opere-di-matteo-renzi_49e803c0-14be-4bba-b4dc-6267de4c57b1.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "\u0027Contocorrente. Bella vita e opere di Matteo Renzi\u0027",
+    "timestamp": "Wed Sep 14 19:57:00 CEST 2022",
+    "descrizione": "Autrice la giornalista Rita Bonaga. Colombo, \u0027cocktail riuscito\u0027",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/approfondimenti/2022/09/14/libri-contocorrente.-bella-vita-e-opere-di-matteo-renzi_afacaecd-797a-41b4-a4db-43a68d83ef74.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Pianeta Terra, al via nuovo festival su ambiente con 150 ospiti",
+    "timestamp": "Wed Sep 14 19:03:03 CEST 2022",
+    "descrizione": "Degli editori Laterza, diretto da Stefano Mancuso",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/2022/09/14/pianeta-terra-al-via-nuovo-festival-su-ambiente-con-150-ospiti_4244dd50-4e89-48c8-95de-69ffd87f7563.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Pianeta Terra, nuovo festival su ambiente con 150 ospiti",
+    "timestamp": "Wed Sep 14 19:57:56 CEST 2022",
+    "descrizione": "Degli editori Laterza, diretto da Stefano Mancuso",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/approfondimenti/2022/09/14/ansa/pianeta-terra-nuovo-festival-su-ambiente-con-150-ospiti_1850bf5c-f1de-4695-98b1-3410464ace55.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "A Roma maratona Heimat, il capolavoro di Edgar Reitz",
+    "timestamp": "Wed Sep 14 19:43:09 CEST 2022",
+    "descrizione": "Gosetti, contiamo di far scoprire ai giovani il capolavoro",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/14/a-roma-maratona-heimat-il-capolavoro-di-edgar-reitz_317907ac-e8cc-432e-918b-4daa697334ca.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Festa del libro medievale e antico dedicata alle donne",
+    "timestamp": "Wed Sep 14 19:57:27 CEST 2022",
+    "descrizione": "Con un omaggio a Chiara Frugoni, cene medievali e concerti",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/approfondimenti/2022/09/14/festa-del-libro-medievale-e-antico-dedicata-alle-donne_3f757f92-258e-4411-84fb-c2332656d159.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Coppa Davis: Musetti e Berrettini a segno, Croazia ko ",
+    "timestamp": "Wed Sep 14 23:45:39 CEST 2022",
+    "descrizione": "A segno anche il doppio, Italia vince 3-0 la sfida",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/sport/tennis/2022/09/14/coppa-davis-italia-croazia-1-0_abd7e7eb-0ec9-40e4-bacc-ea90112b5edd.html",
+    "categoria": "random"
+  },
+  {
     "titolo": "Salone nautico: a Genova 1000 barche e 170 novità",
     "timestamp": "Wed Sep 14 16:33:35 CEST 2022",
     "descrizione": "Fatturato in crescita del 30% e 3,3 mld di export:record storico",
@@ -36,9 +549,9 @@
     "categoria": "random"
   },
   {
-    "titolo": "E. League: Roma, Mourinho: \u0027Zaniolo gioca, cambieremo dietro\u0027",
-    "timestamp": "Wed Sep 14 16:45:18 CEST 2022",
-    "descrizione": "\u0027Dispiace avere un solo Pellegrini, ne vorrei tre\u0027",
+    "titolo": "Europa League: Roma-HJK. In Conference Basaksehir-Fiorentina",
+    "timestamp": "Thu Sep 15 00:39:23 CEST 2022",
+    "descrizione": "Viola in Turchia a caccia di punti e di gol",
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/e.-league-roma-mourinho-zaniolo-gioca-cambieremo-dietro_e24190f2-af74-47a7-8fbe-2d43d4eef725.html",
@@ -55,7 +568,7 @@
   },
   {
     "titolo": "Ultime notizie, il Garante chiede di ridurre a 4 ore lo sciopero del trasporto del 16 settembre. I sindacati dicono no",
-    "timestamp": "Wed Sep 14 17:00:52 CEST 2022",
+    "timestamp": "Thu Sep 15 11:43:01 CEST 2022",
     "descrizione": "\"Per evitare un pregiudizio ulteriore ai diritti dei cittadini utenti nella ripresa delle attività\"",
     "autore": "",
     "fonte": "ansa",
@@ -63,12 +576,48 @@
     "categoria": "random"
   },
   {
-    "titolo": "Emendamento del governo sopprime la deroga al tetto degli stipendi pubblici ",
-    "timestamp": "Wed Sep 14 17:04:43 CEST 2022",
-    "descrizione": "",
+    "titolo": "This England, Kenneth Branagh è Boris Johnson in miniserie",
+    "timestamp": "Wed Sep 14 19:53:19 CEST 2022",
+    "descrizione": "Dal 30 settembre solo su Sky",
     "autore": "",
     "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/emendamento-del-governo-sopprime-la-deroga-al-tetto-degli-stipendi-pubblici-_ad40b666-9408-4020-b379-59ef8ee6698a.html",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/this-england-kenneth-branagh-e-boris-johnson-in-miniserie_3d40feb3-6484-46b7-8fc8-13cfe4872f0a.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "La radio siamo noi, la Rai accende i palinsesti",
+    "timestamp": "Wed Sep 14 19:54:11 CEST 2022",
+    "descrizione": "Nuovo canale per giovani. Ad Fuortes, investimenti in tecnologia",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/tv/2022/09/14/la-radio-siamo-noi-la-rai-accende-i-palinsesti_131f2a13-96ea-4e05-8e65-75d09c13e064.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Rinviato per maltempo lancio di 54 satelliti Starlink",
+    "timestamp": "Wed Sep 14 18:50:48 CEST 2022",
+    "descrizione": "Obiettivo di SpaceX è completare 60 lanci nel 2022, 100 nel 2023",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/tlc/2022/09/14/rinviato-per-maltempo-lancio-di-54-satelliti-starlink_ebd594d0-c503-4509-acb7-33a54a545920.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ken Loach e Noam Chomsky, dialogo con pubblico del Troisi a Roma",
+    "timestamp": "Wed Sep 14 19:44:46 CEST 2022",
+    "descrizione": "Filosofo e regista per la prima volta insieme il 20 settembre",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/14/ken-loach-e-noam-chomsky-dialogo-con-pubblico-del-troisi-a-roma_fec7862f-05af-4311-a4ee-c96d9477d4bc.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Ken Loach e Noam Chomsky, dialogo con pubblico del Troisi a Roma",
+    "timestamp": "Wed Sep 14 19:58:58 CEST 2022",
+    "descrizione": "Filosofo e regista per la prima volta insieme il 20 settembre",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/libro_in_piazza/2022/09/14/ken-loach-e-noam-chomsky-dialogo-con-pubblico-del-troisi-a-roma_3c59a8b6-11e4-4f75-8af9-18a8368b6cfd.html",
     "categoria": "random"
   },
   {
@@ -87,6 +636,15 @@
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/via-libero-definitivo-pe-a-direttiva-ue-su-salario-minimo_df837366-b01b-44f2-8108-8f76181353e5.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Per niente al mondo, mala giustizia nel Nord-Est",
+    "timestamp": "Wed Sep 14 19:52:59 CEST 2022",
+    "descrizione": "Caprino protagonista del film di D\u0027Emilio in sala domani",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/14/per-niente-al-mondo-mala-giustizia-nel-nord-est_d2c98529-9534-438b-b792-8e2098dfd963.html",
     "categoria": "random"
   },
   {
@@ -126,6 +684,15 @@
     "categoria": "random"
   },
   {
+    "titolo": "Nelle biblioteche statali con Stilton, al via \"Topi in tour\"",
+    "timestamp": "Wed Sep 14 19:59:29 CEST 2022",
+    "descrizione": "Franceschini, sono luoghi vivi, conservano la nostra memoria",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/libri/ragazzi/2022/09/14/nelle-biblioteche-statali-con-stilton-al-via-topi-in-tour_cfcf6d9b-7fba-41be-a1d9-0261aa9b6b1f.html",
+    "categoria": "random"
+  },
+  {
     "titolo": "Scuola: allarme paritarie, rischio asili chiusi da gennaio ",
     "timestamp": "Wed Sep 14 16:42:12 CEST 2022",
     "descrizione": "\"Avevamo proposto un emendamento specifico in vista della conversione in Legge del decreto sostegni bis, ma siamo stati inascoltati\", afferma Redaelli, presidente della Fism",
@@ -135,12 +702,30 @@
     "categoria": "random"
   },
   {
+    "titolo": "Twitter, i podcast arrivano ufficialmente su iPhone",
+    "timestamp": "Thu Sep 15 09:50:08 CEST 2022",
+    "descrizione": "Si parte con l\u0027app iOS per gli abbonati del servizio Blue",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/14/twitter-i-podcast-arrivano-ufficialmente-su-iphone_7f2705cb-4af3-4558-8de9-30d1cd93430f.html",
+    "categoria": "random"
+  },
+  {
     "titolo": "Serie A: Mariani arbitra Milan-Napoli",
-    "timestamp": "Wed Sep 14 16:12:33 CEST 2022",
-    "descrizione": "Monza-Juventus a Maresca, Atalanta-Roma a Chiffi",
+    "timestamp": "Wed Sep 14 20:24:06 CEST 2022",
+    "descrizione": "Monza-Juventus a Maresca, Roma-Atalanta a Chiffi",
     "autore": "",
     "fonte": "ansa",
     "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/serie-a-mariani-arbitra-milan-napoli_1c014f72-a344-4cc7-9206-f601bbb6baba.html",
+    "categoria": "random"
+  },
+  {
+    "titolo": "Weekend a teatro tra Fiorello, Martone e Lavia",
+    "timestamp": "Thu Sep 15 12:06:51 CEST 2022",
+    "descrizione": "In scena insieme Bonaiuto-Cervi; con Hystrio palco agli under 35",
+    "autore": "",
+    "fonte": "ansa",
+    "link": "https://www.ansa.it/sito/notizie/cultura/teatro/2022/09/14/weekend-a-teatro-tra-fiorello-martone-e-lavia_d772a4aa-6e1a-4462-95fd-82e00ca4e49b.html",
     "categoria": "random"
   },
   {
@@ -180,364 +765,13 @@
     "categoria": "random"
   },
   {
-    "titolo": "Cgil: decalogo per salari, tetto bollette e riforma fisco",
-    "timestamp": "Wed Sep 14 12:03:56 CEST 2022",
-    "descrizione": "Presentato in assemblea nazionale delegati \u0027Ascoltate il lavoro\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/cgil-decalogo-per-salari-tetto-bollette-e-riforma-fisco_3edb2629-93ca-40b1-9ad0-92a4f8061845.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Internet delle cose,via a costellazione Italia minisatelliti",
-    "timestamp": "Wed Sep 14 13:08:10 CEST 2022",
-    "descrizione": "Finanziamento Asi per rete internet satellitare per gli oggetti",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/14/internet-delle-cosevia-a-costellazione-italia-minisatelliti_812ec5b6-e507-4a41-abce-300d81b33006.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Il feretro della regina Elisabetta giunto a Westminster Hall",
-    "timestamp": "Wed Sep 14 17:26:00 CEST 2022",
-    "descrizione": "Dove resterà esposto 4 giorni per l\u0027ultimo omaggio pubblico",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/labbraccio-di-londra-alla-regina-feretro-a-buckingham-palace_9d750024-1451-4191-b3b9-28cde69e36c9.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Energia: commercianti Venezia stracciano bollette in piazza",
-    "timestamp": "Wed Sep 14 12:04:17 CEST 2022",
-    "descrizione": "L\u0027iniziativa simbolica a Mestre con Camera di commercio",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/energia-commercianti-venezia-stracciano-bollette-in-piazza_091d33d7-b54e-4fb7-97a2-8c11e43c64b0.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "I ladri svuotano la villa durante il match Bayern-Barca",
-    "timestamp": "Wed Sep 14 15:21:34 CEST 2022",
-    "descrizione": "Secondo Bild proprietario è l\u0027attaccante, bottino 500mila euro",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/2022/09/14/i-ladri-gli-svuotano-la-villa-durante-il-match-bayern-barca_f0f62df4-5d43-4961-96b7-17d3e3435aa8.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Google, il Tribunale Ue conferma la condanna e la multa da 4,1 miliardi",
-    "timestamp": "Wed Sep 14 13:08:05 CEST 2022",
-    "descrizione": "Per abuso posizione dominante del suo motore di ricerca",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/tecnologia/internet_social/2022/09/14/google-tribunale-ue-conferma-condanna-e-multa-da-41-mld_f9fef567-aee5-4461-ae1c-1dd32cccfe51.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Dark web, Italia 14esima al mondo per dati rubati",
-    "timestamp": "Wed Sep 14 11:27:34 CEST 2022",
-    "descrizione": "Lazio e Lombardia le regioni più colpite, +44% sul semestre 2021",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/tecnologia/hitech/2022/09/14/dark-web-italia-14esima-al-mondo-per-dati-rubati_4eff8ead-6be6-4016-a380-fe504695fbf3.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Sace, vola export, +10,3% quest\u0027anno e +5% in 2023 a 600mld",
-    "timestamp": "Wed Sep 14 12:05:17 CEST 2022",
-    "descrizione": "Incertezza geopolitica e caro prezzi tra le principali sfide",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/sace-vola-export-103-questanno-e-5-in-2023-a-600mld_2e04dd18-147c-4388-830f-be21117905ab.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Ultime notizie Irene Papas, morta l\u0027attrice greca che fu Penelope nell\u0027\u0027Odissea\u0027 ",
-    "timestamp": "Wed Sep 14 17:30:53 CEST 2022",
-    "descrizione": "Il carisma della Grecia al cinema in 50 di carriera. Ha recitato in oltre 70 film tra cui \u0027Zorba il greco\u0027 e \u0027I cannoni di Navarone\u0027 ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/14/morta-a-96-anni-la-leggendaria-attrice-greca-irene-papas_42ad513b-6e4b-4cf4-8805-b7885e49c42a.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Unicredit: al via assemblea su buyback, la prima in presenza",
-    "timestamp": "Wed Sep 14 10:18:54 CEST 2022",
-    "descrizione": "Dopo quasi tre anni e mezzo \u0027virtuali\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/unicredit-al-via-assemblea-su-buyback-la-prima-in-presenza_4a6d2197-4e0a-45f2-aa7d-d246f084d310.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Google: Tribunale Ue conferma condanna e multa da 4,1 mld",
-    "timestamp": "Wed Sep 14 14:16:09 CEST 2022",
-    "descrizione": "Per abuso posizione dominante del suo motore di ricerca",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/google-tribunale-ue-conferma-condanna-e-multa-da-41-mld_96b8b308-bfcd-4e38-8a83-80b47f97ab9e.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Ghirelli, da costi energia rischio danni pesanti a club serie C",
-    "timestamp": "Wed Sep 14 10:05:36 CEST 2022",
-    "descrizione": "Appello del presidente Lega Pro, occorre intervenire subito\"",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/calcio/2022/09/14/ghirelli-da-costi-energia-rischio-danni-pesanti-a-club-serie-c_524c9d30-0ca1-4fc9-ad30-7eb5143ec326.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Lufthansa: Stato tedesco esce da azionariato, giù in Borsa",
-    "timestamp": "Wed Sep 14 12:06:25 CEST 2022",
-    "descrizione": "Ultima quota venduta a prezzo inferiore a quello di Francoforte",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/14/lufthansa-stato-tedesco-esce-da-azionariato-giu-in-borsa_8a4196d7-7d4b-487c-8dd6-90d49b270286.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Moglie di Zelensky al Parlamento Ue, in Aula con von der Leyen",
-    "timestamp": "Wed Sep 14 11:27:07 CEST 2022",
-    "descrizione": "Bilaterale con Metsola prima del discorso sullo Stato dell\u0027Unione. ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/moglie-di-zelensky-al-parlamento-ue-in-aula-con-von-der-leyen_35ec1b57-1e00-4f87-8487-12bfbcc3e56c.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Ucraina, Zelensky a Izyum liberata: \u0027Torture come a Bucha\u0027",
-    "timestamp": "Wed Sep 14 16:24:20 CEST 2022",
-    "descrizione": "Nella città riconquistata il presidente issa la bandiera giallo-blu. Attacchi russi su tutta la linea del fronte a Donetsk. Massiccio bombardamento a Avdiivka. Gli Usa: \u0027Un certo numero di soldati russi\u0027 si sono ritirati da Kharkiv",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/14/usa-alcuni-soldati-russi-ritirati-da-kharkiv_969a29d1-1829-4458-9e41-b295a18f9272.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Papa ai leader religiosi, mai giustificare la violenza",
-    "timestamp": "Wed Sep 14 16:30:21 CEST 2022",
-    "descrizione": "Francesco in Kazakistan al Congresso delle religioni\u0026#160;",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/14/papa-ai-leader-religiosi-mai-giustificare-la-violenza_b8e57efb-47f6-4947-a7df-686b1dcb9324.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Champions: Dzeko e Dumfries piegano il Plzen, Inter ok TUTTI I RISULTATI",
-    "timestamp": "Wed Sep 14 11:39:22 CEST 2022",
-    "descrizione": "Inzaghi: \u0027Resa facile una gara che non lo era\u0027 ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/2022/09/13/champions-dzeko-e-dumfries-piegano-il-plzen-inter-ok-tutti-i-risultati_dc7a7e74-4cc4-40b3-8151-310d55a15594.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "L\u0027addio alla Regina: torna a Buckingham Palace, per l\u0027ultima volta ",
-    "timestamp": "Tue Sep 13 21:41:31 CEST 2022",
-    "descrizione": "Bagno di folla dalla Scozia a Londra. Russia esclusa da funerali ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/laddio-alla-regina-torna-a-buckingham-palace-per-lultima-volta-_83482dbd-2d70-4b05-87d6-91c8f6bf647a.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "La regina torna a Buckingham Palace, per l\u0027ultima volta",
-    "timestamp": "Wed Sep 14 12:12:59 CEST 2022",
-    "descrizione": "Bagno di folla dalla Scozia a Londra. Russia esclusa da funerali",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/la-regina-torna-a-buckingham-palace-per-lultima-volta_e39823da-1c24-4708-a7fb-6d18f1dd75dd.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Migranti: Turchia, 6 morti dopo respingimento della Grecia",
-    "timestamp": "Tue Sep 13 20:15:37 CEST 2022",
-    "descrizione": "Tra loro due bambini piccoli e tre minori, 73 messi in salvo",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/migranti-turchia-6-morti-dopo-respingimento-della-grecia_d1d1eb58-11ba-4c3c-b2ce-b05aff282ba3.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Antonio Scurati, racconto Mussolini di fronte a Hitler",
-    "timestamp": "Tue Sep 13 20:02:07 CEST 2022",
-    "descrizione": "Esce il terzo volume di \u0027M.\u0027 in anteprima a Pordenonelegge",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/libri/2022/09/13/antonio-scurati-racconto-mussolini-di-fronte-a-hitler_341c773c-709a-4523-8944-f07fcd0aacd6.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "007 Kiev, i filorussi portano via le famiglie dalla Crimea",
-    "timestamp": "Tue Sep 13 21:22:30 CEST 2022",
-    "descrizione": "Intelligence: \u0027Stanno anche vendendo le loro case con urgenza\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/007-kiev-i-filorussi-portano-via-le-famiglie-dalla-crimea_96e849d4-2a13-4e08-9500-efc8187ab0fc.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Re Carlo a Belfast, inno all\u0027unità col Nord Irlanda",
-    "timestamp": "Tue Sep 13 21:38:43 CEST 2022",
-    "descrizione": "Messaggio di riconciliazione nella nazione più turbolenta",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/ansa-focus/-re-carlo-a-belfast-inno-allunita-col-nord-irlanda_8c7b67fd-9041-4da5-8635-6bfd5b2ffaa0.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "007 Usa, dalla Russia 300 milioni ai partiti stranieri in 20 Paesi",
-    "timestamp": "Wed Sep 14 09:14:00 CEST 2022",
-    "descrizione": "I trasferimenti a partire dal 2014. Lo affermano alti dirigenti Usa sulla base di accertamenti dell\u0027intelligence americana. ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/007-usa-da-russia-300-mln-a-partiti-stranieri-in-20-paesi_1700adf0-dbfe-4a3d-a2be-a81aefd086b7.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Fondi russi, Urso: \u0027Non c\u0027è l\u0027Italia per ora. Venerdì Gabrielli al Copasir\u0027",
-    "timestamp": "Wed Sep 14 17:19:27 CEST 2022",
-    "descrizione": "Lo afferma il presidente del Copasir dopo aver avuto un confronto con l\u0027Autorità delegata alla sicurezza della Repubblica Franco Gabrielli",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/13/urso-sente-gabrielli-non-ce-litalia-nel-rapporto-007-usa_063f341c-ecc9-4ee5-8bc1-43c9653dafce.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Monito del Cremlino al dissenso interno, \u0027state attenti\u0027",
-    "timestamp": "Wed Sep 14 09:13:28 CEST 2022",
-    "descrizione": "A Mosca voci di mobilitazione generale, per ora smentite",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/monito-del-cremlino-al-dissenso-interno-state-attenti_e52cb14f-4481-4199-91a7-def7d3f4e9cd.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Morto top manager di Putin, \u0027caduto in mare dallo yacht\u0027",
-    "timestamp": "Tue Sep 13 22:31:04 CEST 2022",
-    "descrizione": "Ivan Pechorin trovato su isola Mar Giappone.\u0027In preda all\u0027alcol\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/morto-top-manager-di-putin-nellartico-caduto-da-barca_9b08bd50-e676-48f7-998c-24c42d60c41b.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Gli azionisti Twitter dicono sì all\u0027offerta di Musk",
-    "timestamp": "Wed Sep 14 08:13:21 CEST 2022",
-    "descrizione": "La talpa accusa: \u0027Profitti sopra la sicurezza, ingannati gli investitori\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/13/gli-azionisti-twitter-dicono-si-allofferta-di-musk_7bb6c1eb-40f5-4b32-af81-3defa056cba1.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Da De Sica e Castellitto arriva l\u0027endorsement a Sgarbi",
-    "timestamp": "Tue Sep 13 19:44:57 CEST 2022",
-    "descrizione": "L\u0027invito a votare al Senato il critico non suo avversario Casini",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/2022/09/13/da-de-sica-e-castellitto-arriva-lendorsement-a-sgarbi_5a165a1e-6511-4cca-b19d-d7433aa7b98e.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Dal Maxxi alla Triennale l\u0027arte ricorda Celant",
-    "timestamp": "Tue Sep 13 19:18:44 CEST 2022",
-    "descrizione": "Studio Celant e Accademia S.Luca presentano Giornate Tematiche",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/arte/2022/09/13/un-anno-senza-celant-dal-maxxi-alla-triennale-larte-lo-ricorda_5d446c43-c8ac-46c9-a2f2-cc85d9a30049.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Ferrari svela Purosangue, il primo suv di Maranello",
-    "timestamp": "Tue Sep 13 19:50:47 CEST 2022",
-    "descrizione": "Motore V12 da 725 Cv, 4 porte e 4 posti veri: apre una nuova era",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/economia/2022/09/13/ferrari-svela-purosangue-il-primo-suv-di-maranello_2e2576e9-77f5-4fcf-b1ff-75cb77c5bba3.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Il feretro della regina sull\u0027aereo per Londra",
-    "timestamp": "Tue Sep 13 19:44:13 CEST 2022",
-    "descrizione": "Elisabetta II torna per l\u0027ultima volta a Buckingham Palace",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/il-feretro-della-regina-sullaereo-per-londra_5a026917-e352-4a6a-890f-b6bf1dbd315c.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Mattarella, Italia lavori in team, sia sempre così ",
-    "timestamp": "Wed Sep 14 08:09:48 CEST 2022",
-    "descrizione": "Visita a sorpresa la portaerei Cavour",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/13/mattarella-italia-lavori-in-team-sia-sempre-cosi-_d502c5b2-c2f2-46ce-a133-3d0374fad1f6.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Scholz chiede a Putin il ritiro completo delle forze russe",
-    "timestamp": "Tue Sep 13 19:41:12 CEST 2022",
-    "descrizione": "Colloquio telefonico di 90 minuti",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/scholz-chiede-a-putin-il-ritiro-completo-delle-forze-russe_785d415c-5821-4071-b2b2-453fd55f848f.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Energia: ok unanime del Senato alla risoluzione sull\u0027aggiornamento degli obiettivi di finanza pubblica",
-    "timestamp": "Tue Sep 13 18:51:55 CEST 2022",
-    "descrizione": "",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/politica/2022/09/13/energia-ok-unanime-del-senato-alla-risoluzione-per-laggiustamento-di-bilancio_81e95187-5f6c-49b2-96c7-acb339e308ee.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Nyt, la controffensiva di Kiev decisa assieme agli Usa",
-    "timestamp": "Tue Sep 13 19:41:09 CEST 2022",
-    "descrizione": "\u0027Colloqui Milley-Sullivan con militari e funzionari ucraini\u0027",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/europa/2022/09/13/nyt-la-controffensiva-di-kiev-decisa-assieme-agli-usa_9d408e6a-4234-45fe-8c90-7fefe5a96111.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Ucraina:  monito del Cremlino al dissenso interno: \u0027State attenti\u0027",
-    "timestamp": "Wed Sep 14 08:59:14 CEST 2022",
-    "descrizione": "007 Kiev, i filorussi portano via le famiglie dalla Crimea ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/mondo/2022/09/13/ucraina-monito-del-cremlino-al-dissenso-interno-state-attenti_574ade94-3344-4757-aeb5-5ea6d1a3f5dc.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Godard morto con suicidio assistito, \u0027era esausto\u0027",
-    "timestamp": "Tue Sep 13 18:56:09 CEST 2022",
-    "descrizione": "Da sempre affascinato dal suicidio, ha chiesto che si sapesse",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/cinema/2022/09/13/godard-morto-con-suicidio-assistito-era-esausto_6b672812-f51c-46ab-a4b1-bcd0da4c4d40.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Laura Pausini non intona Bella Ciao alla tv spagnola, polemiche",
-    "timestamp": "Tue Sep 13 18:18:13 CEST 2022",
-    "descrizione": "\"Non voglio cantare canzoni politiche\"",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/cultura/musica/2022/09/13/laura-pausini-non-intona-bella-ciao-alla-tv-spagnola-polemiche_485cc2c2-8117-4013-8dd3-3556819328a3.html",
-    "categoria": "random"
-  },
-  {
-    "titolo": "Europei di basket, in campo Francia-Italia 33-25 LIVE",
-    "timestamp": "Wed Sep 14 17:43:38 CEST 2022",
-    "descrizione": "Si gioca il secondo quarto ",
-    "autore": "",
-    "fonte": "ansa",
-    "link": "https://www.ansa.it/sito/notizie/sport/basket/2022/09/13/eurobasket-pozzecco-francia-forte-serve-altro-miracolo_bb15da65-0417-4079-939f-7656eaf31c05.html",
-    "categoria": "random"
+    "titolo": "Flickr aggiunge una nuova categoria a supporto della fotografia virtuale",
+    "timestamp": "Thu Sep 15 11:18:33 CEST 2022",
+    "descrizione": "Mentre molti utenti hanno scelto Instagram come piattaforma per pubblicare foto, alcuni fanno ancora affidamento su servizi più datati. Flickr è un servizio di hosting di immagini e video che esiste da quasi due decenni. È stato lanciato per la prima volta nel 2004 e, sebbene sia passato di mano a numerose società madri, mantiene [\u0026#8230;]",
+    "autore": "Alessandro Matthia Celli",
+    "fonte": "androidiani",
+    "link": "https://www.androidiani.com/news/flickr-381217",
+    "categoria": "tecnologia"
   },
   {
     "titolo": "Il nuovo Pixelbook potrebbe non arrivare mai",
@@ -666,13 +900,40 @@
     "categoria": "tecnologia"
   },
   {
-    "titolo": "Ora si può installare l\u0026#8217;app SoundCloud sul proprio smartwatch Wear OS",
-    "timestamp": "Sat Sep 10 13:23:41 CEST 2022",
-    "descrizione": "Da oggi si possono ascoltare tutti gli artisti presenti su SoundCloud utilizzando uno smartwatch Wear OS. L\u0026#8217;app SoundCloud è in fase di implementazione per gli utenti sul canale beta e si può provare iscrivendosi al programma SoundCloud  . (...)Continua a leggere Ora si può installare l\u0026#8217;app SoundCloud sul proprio smartwatch Wear OS su Androidiani.Com © [\u0026#8230;]",
-    "autore": "Alessandro Matthia Celli",
-    "fonte": "androidiani",
-    "link": "https://www.androidiani.com/news/soundcloud-381127",
-    "categoria": "tecnologia"
+    "titolo": "Troppi fiori per Elisabetta: 500 milioni di acquisti, Uk chiede aiuto all’Olanda",
+    "timestamp": "Thu Sep 15 07:53:13 CEST 2022",
+    "descrizione": "Boom di vendite senza precedenti: tutto esaurito dai fiorai. Boccata d’ossigeno per l’economia in affanno: 80% dei fiori arriva da Amsterdam.",
+    "autore": "di Simone Filippetti",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/troppi-fiori-elisabetta-500-milioni-acquisti-uk-chiede-aiuto-all-olanda-AEShzL0B",
+    "categoria": "politica"
+  },
+  {
+    "titolo": "Ucraina ultime notizie. Incidente stradale per Zelensky: illeso. Mosca a Usa: se date missili a lungo raggio a Kiev, siete in guerra",
+    "timestamp": "Thu Sep 15 06:56:37 CEST 2022",
+    "descrizione": "L’ambasciatore russo negli Usa, Anatoly Antonov: «Grandi città russe potrebbero essere colpite e questo significherebbe un diretto coinvolgimento degli Stati Uniti». Incidente d’auto per il presidente ucraino: non è ferito gravemente",
+    "autore": "",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/mosca-usa-se-date-missili-lungo-raggio-kiev-siete-guerra-incidente-d-auto-zelensky-AEs8PU0B",
+    "categoria": "politica"
+  },
+  {
+    "titolo": "Svezia, vince la destra: si dimette la premier socialdemocratica Andersson",
+    "timestamp": "Wed Sep 14 19:53:23 CEST 2022",
+    "descrizione": "Ora è ufficiale: la Svezia avrà un governo di destra. La premier svedese Magdalena Andersson, leader dei Socialdemocratici, ha annunciato le sue dimissioni",
+    "autore": "",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/svezia-vince-destra-si-dimette-premier-socialdemocratica-andersson-AEKKvM0B",
+    "categoria": "politica"
+  },
+  {
+    "titolo": "«Elisabetta personaggio irripetibile, per questo è stata molto amata»",
+    "timestamp": "Wed Sep 14 18:55:30 CEST 2022",
+    "descrizione": "L’erede dell’impero degli hotel ricorda la Regina, spesso ospite dei suoi alberghi: dall\u0027incontro con Pavarotti alla sera della finale tra United e Bayern Monaco.",
+    "autore": "di Simone Filippetti",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/elisabetta-personaggio-irripetibile-questo-e-stata-molto-amata-AEoibJzB",
+    "categoria": "politica"
   },
   {
     "titolo": "Google: Tribunale Ue conferma condanna e multa da 4,1 mld, la più alta mai inflitta",
@@ -702,7 +963,7 @@
     "categoria": "politica"
   },
   {
-    "titolo": "Intelligence Usa: da Mosca 300 mln di dollari ai partiti di 20 paesi. Urso (Copasir): per ora Italia non c’è",
+    "titolo": "Intelligence Usa: da Mosca 300 mln di dollari ai partiti di 20 paesi. Fonti: c’è anche l’Italia",
     "timestamp": "Wed Sep 14 07:46:11 CEST 2022",
     "descrizione": "Dal 2014 la Russia ha trasferito oltre 300 milioni di dollari a partiti politici, dirigenti e politici stranieri per influenzarne l’opinione pubblica",
     "autore": "",
@@ -711,9 +972,9 @@
     "categoria": "politica"
   },
   {
-    "titolo": "Ucraina ultime notizie. Zelensky, a Izyum torture come a Bucha",
+    "titolo": "Ucraina ultime notizie. Zelensky a Izyum liberata: «Avanti verso la vittoria». Mosca: Usa in guerra se forniscono armi a lungo raggio",
     "timestamp": "Wed Sep 14 07:11:28 CEST 2022",
-    "descrizione": "Kiev dichiara che i filorussi stanno facendo sfollare «le loro famiglie dalla Crimea» dopo la controffensiva, mentre il Pentagono evidenzia che un certo numero di soldati russi si ritira dall’oblast di Kharkiv. Negli ultimi giorni Mosca ha chiamato per negoziare, fa notare la vicepremier ucraina Stefanishyna. La Casa Bianca registra i progressi ma avverte: il conflitto sarà lungo. «Gli ucraini hanno fatto progressi significativi ma sarà un lungo cammino», commenta Biden.",
+    "descrizione": "«Ci stiamo muovendo in una sola direzione: avanti e verso la vittoria». Così si è espresso il presidente ucraino Voldymyr Zelensky arrivato a Izyum, nella regione di Kharkiv, cittadina liberata nei giorni scorsi dalla controffensiva. «Non ci si può abituare a queste cose ma dopo Bucha non saremo sorpresi dai passi compiuti dai terroristi russi, perché vediamo la stessa cosa. Di nuovo torture, di nuovo distruzione di scuole, asili», ha detto Zelensky. «Siamo ancora lontani dalla pace», afferma il segretario generale dell’Onu Antonio Guterres",
     "autore": "",
     "fonte": "ilsole24ore",
     "link": "https://www.ilsole24ore.com/art/ucraina-ultime-notizie-kiev-controffensiva-mosca-vuole-negoziare-pentagoni-russi-lasciano-kharkiv-AEsKqB0B",
@@ -747,39 +1008,111 @@
     "categoria": "politica"
   },
   {
-    "titolo": "Elisabetta II, il saluto di Edimburgo. Carlo III parla anche al Parlamento scozzese",
-    "timestamp": "Mon Sep 12 16:18:30 CEST 2022",
-    "descrizione": "Spoglie regali nella cattedrale di St. Giles, luogo della prima esposizione. Il nuovo sovrano, dopo il discorso alle Camere di Londra, fa il bis in Scozia",
-    "autore": "",
+    "titolo": "Nuovi vaccini, cosa c’è da sapere in 10 domande e risposte",
+    "timestamp": "Fri Sep 09 07:21:48 CEST 2022",
+    "descrizione": "A dare il via alla nuova campagna contro il Covid è stata la circolare firmata dal dg Prevenzione del ministero della Salute Gianni Rezza",
+    "autore": "di Andrea Gagliardi",
     "fonte": "ilsole24ore",
-    "link": "https://www.ilsole24ore.com/art/carlo-iii-dietro-feretro-elisabetta-ii-partito-corteo-edimburgo-AEHLPhzB",
-    "categoria": "politica"
+    "link": "https://www.ilsole24ore.com/art/nuovi-vaccini-cosa-c-e-sapere-10-domande-e-risposte-AE7HtgyB",
+    "categoria": "scienze"
   },
   {
-    "titolo": "Ucraina ultime notizie. Kiev: Mosca ha sospeso l’invio di nuove unità in Ucraina",
-    "timestamp": "Mon Sep 12 07:17:50 CEST 2022",
-    "descrizione": "Le forze ucraine avanzano e annunciano la riconquista di 500 chilometri quadrati nell’area di Kherson, mentre Kiev denuncia il bombardamento nei territori da cui i russi si sono ritirati. Sul fronte diplomatico è ancora stallo sui negoziati, con Medvedev che ribadisce le condizioni del Cremlino: «Capitolazione totale del regime di Kiev alle condizioni della Russia». Per Zelensky i negoziati sono «impossibili fino alla completa liberazione dei territori occupati». Scoperta un’altra camera delle torture in una città ripresa ai russi: «In un seminterrato di Balakliya stanza per le esecuzioni e tracce sangue»",
-    "autore": "",
+    "titolo": "Le agenzie approvano i vaccini Covid-19 come gli antinfluenzali",
+    "timestamp": "Wed Sep 07 13:46:42 CEST 2022",
+    "descrizione": "Paul Burton (Moderna). «I dati preclinici di una piattaforma utilizzata per oltre 750 milioni di persone in tutto il mondo permetteranno di stare al passo con l’evoluzione di questo virus»",
+    "autore": "di Francesca Cerati",
     "fonte": "ilsole24ore",
-    "link": "https://www.ilsole24ore.com/art/ucraina-ultime-notizie-truppe-kiev-avanzano-ancora-putin-macron-zaporizhzhia-si-rischia-catastrofe-AEKSLbzB",
-    "categoria": "politica"
+    "link": "https://www.ilsole24ore.com/art/le-agenzie-approvano-vaccini-covid-19-come-antinfluenzali-AEC2zPyB",
+    "categoria": "scienze"
   },
   {
-    "titolo": "Svezia, elezioni: destra avanti di un seggio, exploit del partito anti-immigrati",
-    "timestamp": "Sun Sep 11 20:45:37 CEST 2022",
-    "descrizione": "Testa a testa tra le coalizioni alle Parlamentari. Conservatori di poco avanti: Kristersson potrebbe diventare premier con l’appoggio dell’estrema destra",
-    "autore": "",
+    "titolo": "Vaccini: parte la campagna, ma è rischio caos con l’arrivo di più farmaci anti-varianti",
+    "timestamp": "Wed Sep 07 06:55:25 CEST 2022",
+    "descrizione": "Al via le somministrazioni del vaccino bivalente su Omicron 1. Ma a fine mese potrebbe arrivare quello aggiornato sulla sottovariante Omicron 5",
+    "autore": "di Marzio Bartoloni",
     "fonte": "ilsole24ore",
-    "link": "https://www.ilsole24ore.com/art/svezia-elezioni-sinistra-avanti-exit-poll-ma-e-boom-dell-estrema-destra-AECdgVzB",
-    "categoria": "politica"
+    "link": "https://www.ilsole24ore.com/art/vaccini-parte-campagna-ma-e-rischio-caos-l-arrivo-piu-farmaci-anti-varianti-AE7aLDyB",
+    "categoria": "scienze"
   },
   {
-    "titolo": "11 settembre, Biden al Pentagono: «Non dimenticheremo mai»",
-    "timestamp": "Sun Sep 11 15:05:24 CEST 2022",
-    "descrizione": "Il presidente degli Stati Uniti commemora le vittime degli attentati. E attacca il movimento Maga: «Riporta l’America indietro»",
+    "titolo": "Ecco i vaccini anti varianti, campagna al via dopo metà settembre: prima over 60 e fragili",
+    "timestamp": "Fri Sep 02 07:11:36 CEST 2022",
+    "descrizione": "Ci sarà una pioggia di vaccini a disposizione: non solo per Omicron 1 ma anche per le sottovarianti 4 e 5 ora prevalenti",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/ecco-vaccini-anti-varianti-campagna-via-meta-settembre-prima-over-60-e-fragili-AExUt6wB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "REMEDi4ALL, la strategia europea di riposizionare farmaci già approvati",
+    "timestamp": "Thu Sep 01 08:40:29 CEST 2022",
+    "descrizione": "Finanziato con 23 milioni dalla Commissione europea, il progetto ha l\u0027obiettivo di sviluppare un ecosistema di ricerca e innovazione che faciliti lo sviluppo rapido ed economicamente vantaggioso di farmaci attraverso il drug repurposing. L’Italia è in prima fila con 4 organizzazioni",
+    "autore": "di Francesca Cerati",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/remedi4all-strategia-europea-riposizionare-farmaci-gia-approvati-AEOv7owB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Introvabili, sottopagati e con poca carriera: emergenza infermieri, ne mancano 70mila",
+    "timestamp": "Wed Aug 31 14:55:10 CEST 2022",
+    "descrizione": "Ad allontanare molti giovani da questa cruciale professione sanitaria che tiene in piedi la Sanità italiana sono gli stipendi bassi: con 1700 euro al mese gli infermieri italiani sono al 25° posto tra i Paesi Ocse",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/introvabili-sottopagati-e-poca-carriera-emergenza-infermieri-ne-mancano-70mila-AERvGkwB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Covid, via libera Ema ai vaccini contro la variante Omicron. La quarantena si riduce a 5 giorni",
+    "timestamp": "Tue Aug 30 07:13:15 CEST 2022",
+    "descrizione": "Il 1 settembre l’Agenzia Ue del farmaco darà il via libera ai nuovi vaccini bivalenti efficaci anche contro Omicron. Firmata la circolare della Salute che introduce l’isolamento “light”.",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/cambia-lotta-covid-nuovi-vaccini-anti-varianti-e-quarantena-si-riduce-AEcieOwB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Pronto soccorso al limite, mancano 4.200 camici bianchi. Protestano anche medici ospedalieri per carenza organico",
+    "timestamp": "Thu Jul 28 10:35:27 CEST 2022",
+    "descrizione": "Aumenta il numero di pazienti che resta a lungo in Pronto Soccorso in attesa di ricovero.",
     "autore": "",
     "fonte": "ilsole24ore",
-    "link": "https://www.ilsole24ore.com/art/11-settembre-biden-pentagono-non-dimenticheremo-mai-AEXI5TzB",
-    "categoria": "politica"
+    "link": "https://www.ilsole24ore.com/art/pronto-soccorso-limite-mancano-4200-camici-bianchi-protestano-anche-medici-ospedalieri-carenza-organico-AEOfITpB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Oltre la Spike, gli anticorpi «non canonici» prevedono gravi esiti di Covid",
+    "timestamp": "Fri Jul 22 06:51:06 CEST 2022",
+    "descrizione": "All’Università di Pittsburgh hanno dimostrato che anche gli anticorpi che riconoscono le proteine interne di Sars-CoV2 potrebbero essere importanti per migliorare le terapie ed essere di supporto allo sviluppo di vaccini pan-coronavirus",
+    "autore": "di Francesca Cerati",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/oltre-spike-anticorpi-non-canonici-prevedono-gravi-esiti-covid-AEAPm6nB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Dal 25 luglio le domande per il bonus psicologo fino a 600 euro: ecco come presentarle",
+    "timestamp": "Wed Jul 20 13:10:57 CEST 2022",
+    "descrizione": "L’Inps ha chiarito le modalità con cui presentare la domanda che si potrà fare attraverso la piattaforma on line in via di imminente attivazione o contattando per telefono l’Istituto",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/al-via-bonus-psicologo-fino-600-euro-ecco-come-presentare-domanda-AEgY2jnB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Ecco la mappa dei fragili: sono il 20% degli over 60 e sono di più al Sud",
+    "timestamp": "Wed Jul 20 11:23:36 CEST 2022",
+    "descrizione": "Tra le province più colpite ci sono Salerno, Padova, Crotone, Trapani, Napoli e Benevento. Più “in salute” Asti, Aosta, Bolzano, Siracusa e Sondrio",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/ecco-mappa-fragili-sono-20percento-over-60-e-sono-piu-sud-AEMzKimB",
+    "categoria": "scienze"
+  },
+  {
+    "titolo": "Covid, iniziata la discesa (-15%), ma tregua solo dopo Ferragosto",
+    "timestamp": "Wed Jul 20 07:22:11 CEST 2022",
+    "descrizione": "Sarà un’estate di faticosa convivenza con il Covid che a livello di contagi - secondo gli esperti - dovrebbe frenare solo tra un mese",
+    "autore": "di Marzio Bartoloni",
+    "fonte": "ilsole24ore",
+    "link": "https://www.ilsole24ore.com/art/coronavirus-iniziata-discesa-15percento-ma-tregua-solo-ferragosto-AEeKaXnB",
+    "categoria": "scienze"
   }
 ]
